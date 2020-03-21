@@ -152,6 +152,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColonDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ColonForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +202,23 @@
     <Compile Include="Models\Stomach.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ColonDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColonDataForm.Designer.cs">
+      <DependentUpon>ColonDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StomacheDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StomacheDataForm.Designer.cs">
+      <DependentUpon>StomacheDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StomacheDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ColonForm.resx">
       <DependentUpon>ColonForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +245,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ColonDataForm.resx">
+      <DependentUpon>ColonDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StomacheDataForm.resx">
+      <DependentUpon>StomacheDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ColonDataSet.xsc">
+      <DependentUpon>ColonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ColonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ColonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ColonDataSet.xss">
+      <DependentUpon>ColonDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Db\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -255,6 +294,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StomacheDataSet.xsc">
+      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StomacheDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StomacheDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StomacheDataSet.xss">
+      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -121,6 +121,16 @@ namespace IssaForms
             ForCr.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var ColonForm = new ColonDataForm();
+            ColonForm.Show();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var StomacheForm = new StomacheDataForm();
+            StomacheForm.Show();
+        }
     }
 }
