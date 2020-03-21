@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IssaForms.Models;
 using IssaForms.Db;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace IssaForms
 {
@@ -52,8 +54,32 @@ namespace IssaForms
 
             _context.Colons.Add(Colon);
             _context.SaveChanges();
-            var ForCr = new ColonForm();
+
+            //ReportDocument cryRpt = new ReportDocument();
+            //cryRpt.Load("CrystalReport1.rpt");
+
+            //ParameterFieldDefinitions crParameterFieldDefinitions;
+            //ParameterFieldDefinition crParameterFieldDefinition;
+            //ParameterValues crParameterValues = new ParameterValues();
+            //ParameterDiscreteValue crParameterDiscreteValue = new ParameterDiscreteValue();
+
+            //crParameterDiscreteValue.Value = Colon.Id;
+            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
+            //crParameterFieldDefinition = crParameterFieldDefinitions["Id"];
+            //crParameterValues = crParameterFieldDefinition.CurrentValues;
+
+            //crParameterValues.Clear();
+            //crParameterValues.Add(crParameterDiscreteValue);
+            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
+
+            CrystalReport1 cr = new CrystalReport1();
+            cr.SetParameterValue("@Id", Colon.Id);
+            var ForCr = new ReportViewerForm();
+            ForCr.crystalReportViewer1.ReportSource = cr;
+            ForCr.crystalReportViewer1.Refresh();
             ForCr.Show();
+            //ForCr.crystalReportViewer1.ReportSource = cryRpt;
+            //ForCr.crystalReportViewer1.Refresh();
             //var cr = new CrystalReport1();
             //cr.Load("CrystalReport1.rpt");
             //var txt1 = cr.ReportDefinition.Sections["Section1"].ReportObjects["Text1"];
@@ -86,7 +112,12 @@ namespace IssaForms
             };
             _context.Stomaches.Add(Stomach);
             _context.SaveChanges();
-            var ForCr = new StomachForm();
+
+            CrystalReport2 cr = new CrystalReport2();
+            cr.SetParameterValue("@Id", Stomach.Id);
+            var ForCr = new ReportViewerForm();
+            ForCr.crystalReportViewer1.ReportSource = cr;
+            ForCr.crystalReportViewer1.Refresh();
             ForCr.Show();
         }
 

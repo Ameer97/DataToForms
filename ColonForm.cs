@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace IssaForms
 {
-    public partial class ColonForm : Form
+    public partial class ReportViewerForm : Form
     {
-        public ColonForm()
+
+        public ReportViewerForm()
         {
             InitializeComponent();
         }
