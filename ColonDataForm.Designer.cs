@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colonDataSet = new IssaForms.ColonDataSet();
-            this.colonsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colonsTableAdapter = new IssaForms.ColonDataSetTableAdapters.ColonsTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preparationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.analInspectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,9 +54,12 @@
             this.clinicalDataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conclusionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endoscopistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colonsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colonDataSet = new IssaForms.ColonDataSet();
+            this.colonsTableAdapter = new IssaForms.ColonDataSetTableAdapters.ColonsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colonDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colonsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colonDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -97,20 +97,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 450);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // colonDataSet
-            // 
-            this.colonDataSet.DataSetName = "ColonDataSet";
-            this.colonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // colonsBindingSource
-            // 
-            this.colonsBindingSource.DataMember = "Colons";
-            this.colonsBindingSource.DataSource = this.colonDataSet;
-            // 
-            // colonsTableAdapter
-            // 
-            this.colonsTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -257,6 +244,20 @@
             this.endoscopistDataGridViewTextBoxColumn.HeaderText = "Endoscopist";
             this.endoscopistDataGridViewTextBoxColumn.Name = "endoscopistDataGridViewTextBoxColumn";
             // 
+            // colonsBindingSource
+            // 
+            this.colonsBindingSource.DataMember = "Colons";
+            this.colonsBindingSource.DataSource = this.colonDataSet;
+            // 
+            // colonDataSet
+            // 
+            this.colonDataSet.DataSetName = "ColonDataSet";
+            this.colonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // colonsTableAdapter
+            // 
+            this.colonsTableAdapter.ClearBeforeFill = true;
+            // 
             // ColonDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,8 +268,8 @@
             this.Text = "ViewForm";
             this.Load += new System.EventHandler(this.ColonDataForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colonDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colonsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colonDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

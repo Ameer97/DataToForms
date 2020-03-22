@@ -23,5 +23,17 @@ namespace IssaForms
             this.colonsTableAdapter.Fill(this.colonDataSet.Colons);
 
         }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            var Row = dataGridView1.SelectedCells[0].RowIndex;
+            var Id = dataGridView1.Rows[Row].Cells[0].Value;
+            CrystalReport1 cr = new CrystalReport1();
+            cr.SetParameterValue("@Id", Id);
+            var ForCr = new ReportViewerForm();
+            ForCr.crystalReportViewer1.ReportSource = cr;
+            ForCr.crystalReportViewer1.Refresh();
+            ForCr.Show();
+        }
     }
 }
