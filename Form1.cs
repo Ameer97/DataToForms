@@ -30,7 +30,7 @@ namespace IssaForms
                 Name = TName.Text,
                 Age = TAge.Text,
                 FileNo = TFileNo.Text,
-                Date = Convert.ToDateTime((TDate.Text == "")? DateTime.Now.ToString() : TDate.Text),
+                Date = dateTimePicker1.Value,
                 Premedication = TPremedication.Text,
                 Scope = TScope.Text,
                 Olympus = TOlympus.Text,
@@ -49,7 +49,7 @@ namespace IssaForms
                 Sigmoid = TSigmoid.Text,
                 RectumRetroflexion = TRectumRetroflexion.Text,
                 Conclusion = TConclusion.Text,
-                Endoscopist = Convert.ToDateTime((TEndoscopist.Text == "") ? DateTime.Now.ToString() : TEndoscopist.Text),
+                Endoscopist = dateTimePicker2.Value,
             };
 
             _context.Colons.Add(Colon);
@@ -131,6 +131,11 @@ namespace IssaForms
         {
             var StomacheForm = new StomacheDataForm();
             StomacheForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

@@ -88,6 +88,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // TName
@@ -149,7 +152,7 @@
             // 
             // TDate
             // 
-            this.TDate.Location = new System.Drawing.Point(308, 84);
+            this.TDate.Location = new System.Drawing.Point(37, 54);
             this.TDate.Name = "TDate";
             this.TDate.Size = new System.Drawing.Size(100, 20);
             this.TDate.TabIndex = 6;
@@ -463,7 +466,7 @@
             // 
             // TEndoscopist
             // 
-            this.TEndoscopist.Location = new System.Drawing.Point(443, 470);
+            this.TEndoscopist.Location = new System.Drawing.Point(226, 484);
             this.TEndoscopist.Name = "TEndoscopist";
             this.TEndoscopist.Size = new System.Drawing.Size(100, 20);
             this.TEndoscopist.TabIndex = 45;
@@ -582,11 +585,38 @@
             this.label2.TabIndex = 59;
             this.label2.Text = "Colon";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(376, 230);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 60;
+            this.button5.Text = "Clear Data";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(226, 84);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(210, 20);
+            this.dateTimePicker1.TabIndex = 61;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(402, 470);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 62;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 509);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -716,6 +746,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
 
