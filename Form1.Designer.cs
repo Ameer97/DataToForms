@@ -35,7 +35,6 @@
             this.LFileNo = new System.Windows.Forms.Label();
             this.TFileNo = new System.Windows.Forms.TextBox();
             this.LDate = new System.Windows.Forms.Label();
-            this.TDate = new System.Windows.Forms.TextBox();
             this.LPremedication = new System.Windows.Forms.Label();
             this.TPremedication = new System.Windows.Forms.TextBox();
             this.LScope = new System.Windows.Forms.Label();
@@ -74,7 +73,6 @@
             this.LConclusion = new System.Windows.Forms.Label();
             this.TConclusion = new System.Windows.Forms.TextBox();
             this.LEndoscopist = new System.Windows.Forms.Label();
-            this.TEndoscopist = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.LEsophagusGEJ = new System.Windows.Forms.Label();
             this.TEsophagusGEJ = new System.Windows.Forms.TextBox();
@@ -150,13 +148,6 @@
             this.LDate.TabIndex = 7;
             this.LDate.Text = "Date";
             // 
-            // TDate
-            // 
-            this.TDate.Location = new System.Drawing.Point(37, 54);
-            this.TDate.Name = "TDate";
-            this.TDate.Size = new System.Drawing.Size(100, 20);
-            this.TDate.TabIndex = 6;
-            // 
             // LPremedication
             // 
             this.LPremedication.AutoSize = true;
@@ -192,7 +183,7 @@
             // LOlympus
             // 
             this.LOlympus.AutoSize = true;
-            this.LOlympus.Location = new System.Drawing.Point(442, 9);
+            this.LOlympus.Location = new System.Drawing.Point(469, 6);
             this.LOlympus.Name = "LOlympus";
             this.LOlympus.Size = new System.Drawing.Size(47, 13);
             this.LOlympus.TabIndex = 13;
@@ -200,7 +191,7 @@
             // 
             // TOlympus
             // 
-            this.TOlympus.Location = new System.Drawing.Point(567, 6);
+            this.TOlympus.Location = new System.Drawing.Point(594, 3);
             this.TOlympus.Name = "TOlympus";
             this.TOlympus.Size = new System.Drawing.Size(100, 20);
             this.TOlympus.TabIndex = 12;
@@ -218,7 +209,7 @@
             // LReferredDoctor
             // 
             this.LReferredDoctor.AutoSize = true;
-            this.LReferredDoctor.Location = new System.Drawing.Point(442, 35);
+            this.LReferredDoctor.Location = new System.Drawing.Point(469, 32);
             this.LReferredDoctor.Name = "LReferredDoctor";
             this.LReferredDoctor.Size = new System.Drawing.Size(80, 13);
             this.LReferredDoctor.TabIndex = 16;
@@ -226,7 +217,7 @@
             // 
             // TReferredDoctor
             // 
-            this.TReferredDoctor.Location = new System.Drawing.Point(567, 32);
+            this.TReferredDoctor.Location = new System.Drawing.Point(594, 29);
             this.TReferredDoctor.Name = "TReferredDoctor";
             this.TReferredDoctor.Size = new System.Drawing.Size(100, 20);
             this.TReferredDoctor.TabIndex = 15;
@@ -234,7 +225,7 @@
             // LMedazolam
             // 
             this.LMedazolam.AutoSize = true;
-            this.LMedazolam.Location = new System.Drawing.Point(442, 61);
+            this.LMedazolam.Location = new System.Drawing.Point(469, 58);
             this.LMedazolam.Name = "LMedazolam";
             this.LMedazolam.Size = new System.Drawing.Size(61, 13);
             this.LMedazolam.TabIndex = 18;
@@ -242,7 +233,7 @@
             // 
             // TMedazolam
             // 
-            this.TMedazolam.Location = new System.Drawing.Point(567, 58);
+            this.TMedazolam.Location = new System.Drawing.Point(594, 55);
             this.TMedazolam.Name = "TMedazolam";
             this.TMedazolam.Size = new System.Drawing.Size(100, 20);
             this.TMedazolam.TabIndex = 17;
@@ -250,7 +241,7 @@
             // LPentax
             // 
             this.LPentax.AutoSize = true;
-            this.LPentax.Location = new System.Drawing.Point(442, 87);
+            this.LPentax.Location = new System.Drawing.Point(469, 84);
             this.LPentax.Name = "LPentax";
             this.LPentax.Size = new System.Drawing.Size(40, 13);
             this.LPentax.TabIndex = 20;
@@ -258,7 +249,7 @@
             // 
             // TPentax
             // 
-            this.TPentax.Location = new System.Drawing.Point(567, 84);
+            this.TPentax.Location = new System.Drawing.Point(594, 81);
             this.TPentax.Name = "TPentax";
             this.TPentax.Size = new System.Drawing.Size(100, 20);
             this.TPentax.TabIndex = 19;
@@ -266,7 +257,7 @@
             // LOthers
             // 
             this.LOthers.AutoSize = true;
-            this.LOthers.Location = new System.Drawing.Point(442, 113);
+            this.LOthers.Location = new System.Drawing.Point(469, 110);
             this.LOthers.Name = "LOthers";
             this.LOthers.Size = new System.Drawing.Size(38, 13);
             this.LOthers.TabIndex = 22;
@@ -274,7 +265,7 @@
             // 
             // TOthers
             // 
-            this.TOthers.Location = new System.Drawing.Point(567, 110);
+            this.TOthers.Location = new System.Drawing.Point(594, 107);
             this.TOthers.Name = "TOthers";
             this.TOthers.Size = new System.Drawing.Size(100, 20);
             this.TOthers.TabIndex = 21;
@@ -282,7 +273,7 @@
             // LOthers1
             // 
             this.LOthers1.AutoSize = true;
-            this.LOthers1.Location = new System.Drawing.Point(442, 139);
+            this.LOthers1.Location = new System.Drawing.Point(469, 136);
             this.LOthers1.Name = "LOthers1";
             this.LOthers1.Size = new System.Drawing.Size(44, 13);
             this.LOthers1.TabIndex = 24;
@@ -290,7 +281,7 @@
             // 
             // TOthers1
             // 
-            this.TOthers1.Location = new System.Drawing.Point(567, 136);
+            this.TOthers1.Location = new System.Drawing.Point(594, 133);
             this.TOthers1.Name = "TOthers1";
             this.TOthers1.Size = new System.Drawing.Size(100, 20);
             this.TOthers1.TabIndex = 23;
@@ -298,7 +289,7 @@
             // LClinicalData
             // 
             this.LClinicalData.AutoSize = true;
-            this.LClinicalData.Location = new System.Drawing.Point(318, 185);
+            this.LClinicalData.Location = new System.Drawing.Point(345, 175);
             this.LClinicalData.Name = "LClinicalData";
             this.LClinicalData.Size = new System.Drawing.Size(63, 13);
             this.LClinicalData.TabIndex = 26;
@@ -306,7 +297,7 @@
             // 
             // TClinicalData
             // 
-            this.TClinicalData.Location = new System.Drawing.Point(443, 182);
+            this.TClinicalData.Location = new System.Drawing.Point(470, 172);
             this.TClinicalData.Name = "TClinicalData";
             this.TClinicalData.Size = new System.Drawing.Size(100, 20);
             this.TClinicalData.TabIndex = 25;
@@ -463,13 +454,6 @@
             this.LEndoscopist.Size = new System.Drawing.Size(65, 13);
             this.LEndoscopist.TabIndex = 46;
             this.LEndoscopist.Text = "Endoscopist";
-            // 
-            // TEndoscopist
-            // 
-            this.TEndoscopist.Location = new System.Drawing.Point(226, 484);
-            this.TEndoscopist.Name = "TEndoscopist";
-            this.TEndoscopist.Size = new System.Drawing.Size(100, 20);
-            this.TEndoscopist.TabIndex = 45;
             // 
             // button2
             // 
@@ -631,7 +615,6 @@
             this.Controls.Add(this.TEsophagusGEJ);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.LEndoscopist);
-            this.Controls.Add(this.TEndoscopist);
             this.Controls.Add(this.LConclusion);
             this.Controls.Add(this.TConclusion);
             this.Controls.Add(this.LRectumRetroflexion);
@@ -670,7 +653,6 @@
             this.Controls.Add(this.LPremedication);
             this.Controls.Add(this.TPremedication);
             this.Controls.Add(this.LDate);
-            this.Controls.Add(this.TDate);
             this.Controls.Add(this.LFileNo);
             this.Controls.Add(this.TFileNo);
             this.Controls.Add(this.LAge);
@@ -693,7 +675,6 @@
         private System.Windows.Forms.Label LFileNo;
         private System.Windows.Forms.TextBox TFileNo;
         private System.Windows.Forms.Label LDate;
-        private System.Windows.Forms.TextBox TDate;
         private System.Windows.Forms.Label LPremedication;
         private System.Windows.Forms.TextBox TPremedication;
         private System.Windows.Forms.Label LScope;
@@ -732,7 +713,6 @@
         private System.Windows.Forms.Label LConclusion;
         private System.Windows.Forms.TextBox TConclusion;
         private System.Windows.Forms.Label LEndoscopist;
-        private System.Windows.Forms.TextBox TEndoscopist;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label LEsophagusGEJ;
         private System.Windows.Forms.TextBox TEsophagusGEJ;

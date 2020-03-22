@@ -93,7 +93,7 @@ namespace IssaForms
                 Name = TName.Text,
                 Age = TAge.Text,
                 FileNo = TFileNo.Text,
-                Date = Convert.ToDateTime((TDate.Text == "") ? DateTime.Now.ToString() : TDate.Text),
+                Date = dateTimePicker1.Value,
                 Premedication = TPremedication.Text,
                 Scope = TScope.Text,
                 Olympus = TOlympus.Text,
@@ -108,7 +108,7 @@ namespace IssaForms
                 DuodenumD1 = TDuodenumD1.Text,
                 D2 = TD2.Text,
                 Conclusion = TConclusion.Text,
-                Endoscopist = Convert.ToDateTime((TEndoscopist.Text == "") ? DateTime.Now.ToString() : TEndoscopist.Text),
+                Endoscopist = dateTimePicker2.Value,
             };
             _context.Stomaches.Add(Stomach);
             _context.SaveChanges();
