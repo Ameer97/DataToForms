@@ -86,11 +86,13 @@
             this.TD2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TName
             // 
-            this.TName.Location = new System.Drawing.Point(369, 8);
+            this.TName.Location = new System.Drawing.Point(308, 6);
             this.TName.Name = "TName";
             this.TName.Size = new System.Drawing.Size(100, 20);
             this.TName.TabIndex = 0;
@@ -98,7 +100,7 @@
             // LName
             // 
             this.LName.AutoSize = true;
-            this.LName.Location = new System.Drawing.Point(244, 11);
+            this.LName.Location = new System.Drawing.Point(183, 9);
             this.LName.Name = "LName";
             this.LName.Size = new System.Drawing.Size(35, 13);
             this.LName.TabIndex = 1;
@@ -107,7 +109,7 @@
             // LAge
             // 
             this.LAge.AutoSize = true;
-            this.LAge.Location = new System.Drawing.Point(244, 37);
+            this.LAge.Location = new System.Drawing.Point(183, 35);
             this.LAge.Name = "LAge";
             this.LAge.Size = new System.Drawing.Size(26, 13);
             this.LAge.TabIndex = 3;
@@ -115,7 +117,7 @@
             // 
             // TAge
             // 
-            this.TAge.Location = new System.Drawing.Point(369, 34);
+            this.TAge.Location = new System.Drawing.Point(308, 32);
             this.TAge.Name = "TAge";
             this.TAge.Size = new System.Drawing.Size(100, 20);
             this.TAge.TabIndex = 2;
@@ -123,7 +125,7 @@
             // LFileNo
             // 
             this.LFileNo.AutoSize = true;
-            this.LFileNo.Location = new System.Drawing.Point(244, 63);
+            this.LFileNo.Location = new System.Drawing.Point(183, 61);
             this.LFileNo.Name = "LFileNo";
             this.LFileNo.Size = new System.Drawing.Size(37, 13);
             this.LFileNo.TabIndex = 5;
@@ -131,7 +133,7 @@
             // 
             // TFileNo
             // 
-            this.TFileNo.Location = new System.Drawing.Point(369, 60);
+            this.TFileNo.Location = new System.Drawing.Point(308, 58);
             this.TFileNo.Name = "TFileNo";
             this.TFileNo.Size = new System.Drawing.Size(100, 20);
             this.TFileNo.TabIndex = 4;
@@ -139,7 +141,7 @@
             // LDate
             // 
             this.LDate.AutoSize = true;
-            this.LDate.Location = new System.Drawing.Point(244, 89);
+            this.LDate.Location = new System.Drawing.Point(183, 87);
             this.LDate.Name = "LDate";
             this.LDate.Size = new System.Drawing.Size(30, 13);
             this.LDate.TabIndex = 7;
@@ -147,7 +149,7 @@
             // 
             // TDate
             // 
-            this.TDate.Location = new System.Drawing.Point(369, 86);
+            this.TDate.Location = new System.Drawing.Point(308, 84);
             this.TDate.Name = "TDate";
             this.TDate.Size = new System.Drawing.Size(100, 20);
             this.TDate.TabIndex = 6;
@@ -155,7 +157,7 @@
             // LPremedication
             // 
             this.LPremedication.AutoSize = true;
-            this.LPremedication.Location = new System.Drawing.Point(244, 115);
+            this.LPremedication.Location = new System.Drawing.Point(183, 113);
             this.LPremedication.Name = "LPremedication";
             this.LPremedication.Size = new System.Drawing.Size(74, 13);
             this.LPremedication.TabIndex = 9;
@@ -163,7 +165,7 @@
             // 
             // TPremedication
             // 
-            this.TPremedication.Location = new System.Drawing.Point(369, 112);
+            this.TPremedication.Location = new System.Drawing.Point(308, 110);
             this.TPremedication.Name = "TPremedication";
             this.TPremedication.Size = new System.Drawing.Size(100, 20);
             this.TPremedication.TabIndex = 8;
@@ -171,7 +173,7 @@
             // LScope
             // 
             this.LScope.AutoSize = true;
-            this.LScope.Location = new System.Drawing.Point(244, 141);
+            this.LScope.Location = new System.Drawing.Point(183, 139);
             this.LScope.Name = "LScope";
             this.LScope.Size = new System.Drawing.Size(38, 13);
             this.LScope.TabIndex = 11;
@@ -179,7 +181,7 @@
             // 
             // TScope
             // 
-            this.TScope.Location = new System.Drawing.Point(369, 138);
+            this.TScope.Location = new System.Drawing.Point(308, 136);
             this.TScope.Name = "TScope";
             this.TScope.Size = new System.Drawing.Size(100, 20);
             this.TScope.TabIndex = 10;
@@ -187,7 +189,7 @@
             // LOlympus
             // 
             this.LOlympus.AutoSize = true;
-            this.LOlympus.Location = new System.Drawing.Point(244, 167);
+            this.LOlympus.Location = new System.Drawing.Point(442, 9);
             this.LOlympus.Name = "LOlympus";
             this.LOlympus.Size = new System.Drawing.Size(47, 13);
             this.LOlympus.TabIndex = 13;
@@ -195,25 +197,25 @@
             // 
             // TOlympus
             // 
-            this.TOlympus.Location = new System.Drawing.Point(369, 164);
+            this.TOlympus.Location = new System.Drawing.Point(567, 6);
             this.TOlympus.Name = "TOlympus";
             this.TOlympus.Size = new System.Drawing.Size(100, 20);
             this.TOlympus.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(71, 34);
+            this.button1.Location = new System.Drawing.Point(37, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
+            this.button1.Text = "Insert";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LReferredDoctor
             // 
             this.LReferredDoctor.AutoSize = true;
-            this.LReferredDoctor.Location = new System.Drawing.Point(244, 193);
+            this.LReferredDoctor.Location = new System.Drawing.Point(442, 35);
             this.LReferredDoctor.Name = "LReferredDoctor";
             this.LReferredDoctor.Size = new System.Drawing.Size(80, 13);
             this.LReferredDoctor.TabIndex = 16;
@@ -221,7 +223,7 @@
             // 
             // TReferredDoctor
             // 
-            this.TReferredDoctor.Location = new System.Drawing.Point(369, 190);
+            this.TReferredDoctor.Location = new System.Drawing.Point(567, 32);
             this.TReferredDoctor.Name = "TReferredDoctor";
             this.TReferredDoctor.Size = new System.Drawing.Size(100, 20);
             this.TReferredDoctor.TabIndex = 15;
@@ -229,7 +231,7 @@
             // LMedazolam
             // 
             this.LMedazolam.AutoSize = true;
-            this.LMedazolam.Location = new System.Drawing.Point(244, 219);
+            this.LMedazolam.Location = new System.Drawing.Point(442, 61);
             this.LMedazolam.Name = "LMedazolam";
             this.LMedazolam.Size = new System.Drawing.Size(61, 13);
             this.LMedazolam.TabIndex = 18;
@@ -237,7 +239,7 @@
             // 
             // TMedazolam
             // 
-            this.TMedazolam.Location = new System.Drawing.Point(369, 216);
+            this.TMedazolam.Location = new System.Drawing.Point(567, 58);
             this.TMedazolam.Name = "TMedazolam";
             this.TMedazolam.Size = new System.Drawing.Size(100, 20);
             this.TMedazolam.TabIndex = 17;
@@ -245,7 +247,7 @@
             // LPentax
             // 
             this.LPentax.AutoSize = true;
-            this.LPentax.Location = new System.Drawing.Point(244, 245);
+            this.LPentax.Location = new System.Drawing.Point(442, 87);
             this.LPentax.Name = "LPentax";
             this.LPentax.Size = new System.Drawing.Size(40, 13);
             this.LPentax.TabIndex = 20;
@@ -253,7 +255,7 @@
             // 
             // TPentax
             // 
-            this.TPentax.Location = new System.Drawing.Point(369, 242);
+            this.TPentax.Location = new System.Drawing.Point(567, 84);
             this.TPentax.Name = "TPentax";
             this.TPentax.Size = new System.Drawing.Size(100, 20);
             this.TPentax.TabIndex = 19;
@@ -261,7 +263,7 @@
             // LOthers
             // 
             this.LOthers.AutoSize = true;
-            this.LOthers.Location = new System.Drawing.Point(244, 271);
+            this.LOthers.Location = new System.Drawing.Point(442, 113);
             this.LOthers.Name = "LOthers";
             this.LOthers.Size = new System.Drawing.Size(38, 13);
             this.LOthers.TabIndex = 22;
@@ -269,7 +271,7 @@
             // 
             // TOthers
             // 
-            this.TOthers.Location = new System.Drawing.Point(369, 268);
+            this.TOthers.Location = new System.Drawing.Point(567, 110);
             this.TOthers.Name = "TOthers";
             this.TOthers.Size = new System.Drawing.Size(100, 20);
             this.TOthers.TabIndex = 21;
@@ -277,7 +279,7 @@
             // LOthers1
             // 
             this.LOthers1.AutoSize = true;
-            this.LOthers1.Location = new System.Drawing.Point(244, 297);
+            this.LOthers1.Location = new System.Drawing.Point(442, 139);
             this.LOthers1.Name = "LOthers1";
             this.LOthers1.Size = new System.Drawing.Size(44, 13);
             this.LOthers1.TabIndex = 24;
@@ -285,7 +287,7 @@
             // 
             // TOthers1
             // 
-            this.TOthers1.Location = new System.Drawing.Point(369, 294);
+            this.TOthers1.Location = new System.Drawing.Point(567, 136);
             this.TOthers1.Name = "TOthers1";
             this.TOthers1.Size = new System.Drawing.Size(100, 20);
             this.TOthers1.TabIndex = 23;
@@ -293,7 +295,7 @@
             // LClinicalData
             // 
             this.LClinicalData.AutoSize = true;
-            this.LClinicalData.Location = new System.Drawing.Point(244, 323);
+            this.LClinicalData.Location = new System.Drawing.Point(318, 185);
             this.LClinicalData.Name = "LClinicalData";
             this.LClinicalData.Size = new System.Drawing.Size(63, 13);
             this.LClinicalData.TabIndex = 26;
@@ -301,7 +303,7 @@
             // 
             // TClinicalData
             // 
-            this.TClinicalData.Location = new System.Drawing.Point(369, 320);
+            this.TClinicalData.Location = new System.Drawing.Point(443, 182);
             this.TClinicalData.Name = "TClinicalData";
             this.TClinicalData.Size = new System.Drawing.Size(100, 20);
             this.TClinicalData.TabIndex = 25;
@@ -309,7 +311,7 @@
             // LPreparation
             // 
             this.LPreparation.AutoSize = true;
-            this.LPreparation.Location = new System.Drawing.Point(68, 358);
+            this.LPreparation.Location = new System.Drawing.Point(12, 252);
             this.LPreparation.Name = "LPreparation";
             this.LPreparation.Size = new System.Drawing.Size(61, 13);
             this.LPreparation.TabIndex = 28;
@@ -317,7 +319,7 @@
             // 
             // TPreparation
             // 
-            this.TPreparation.Location = new System.Drawing.Point(193, 355);
+            this.TPreparation.Location = new System.Drawing.Point(137, 249);
             this.TPreparation.Name = "TPreparation";
             this.TPreparation.Size = new System.Drawing.Size(100, 20);
             this.TPreparation.TabIndex = 27;
@@ -325,7 +327,7 @@
             // LAnalInspection
             // 
             this.LAnalInspection.AutoSize = true;
-            this.LAnalInspection.Location = new System.Drawing.Point(68, 384);
+            this.LAnalInspection.Location = new System.Drawing.Point(12, 278);
             this.LAnalInspection.Name = "LAnalInspection";
             this.LAnalInspection.Size = new System.Drawing.Size(77, 13);
             this.LAnalInspection.TabIndex = 30;
@@ -333,7 +335,7 @@
             // 
             // TAnalInspection
             // 
-            this.TAnalInspection.Location = new System.Drawing.Point(193, 381);
+            this.TAnalInspection.Location = new System.Drawing.Point(137, 275);
             this.TAnalInspection.Name = "TAnalInspection";
             this.TAnalInspection.Size = new System.Drawing.Size(100, 20);
             this.TAnalInspection.TabIndex = 29;
@@ -341,7 +343,7 @@
             // LPRExam
             // 
             this.LPRExam.AutoSize = true;
-            this.LPRExam.Location = new System.Drawing.Point(68, 410);
+            this.LPRExam.Location = new System.Drawing.Point(12, 304);
             this.LPRExam.Name = "LPRExam";
             this.LPRExam.Size = new System.Drawing.Size(48, 13);
             this.LPRExam.TabIndex = 32;
@@ -349,7 +351,7 @@
             // 
             // TPRExam
             // 
-            this.TPRExam.Location = new System.Drawing.Point(193, 407);
+            this.TPRExam.Location = new System.Drawing.Point(137, 301);
             this.TPRExam.Name = "TPRExam";
             this.TPRExam.Size = new System.Drawing.Size(100, 20);
             this.TPRExam.TabIndex = 31;
@@ -357,7 +359,7 @@
             // LIleum
             // 
             this.LIleum.AutoSize = true;
-            this.LIleum.Location = new System.Drawing.Point(68, 436);
+            this.LIleum.Location = new System.Drawing.Point(12, 330);
             this.LIleum.Name = "LIleum";
             this.LIleum.Size = new System.Drawing.Size(32, 13);
             this.LIleum.TabIndex = 34;
@@ -365,7 +367,7 @@
             // 
             // TIleum
             // 
-            this.TIleum.Location = new System.Drawing.Point(193, 433);
+            this.TIleum.Location = new System.Drawing.Point(137, 327);
             this.TIleum.Name = "TIleum";
             this.TIleum.Size = new System.Drawing.Size(100, 20);
             this.TIleum.TabIndex = 33;
@@ -373,7 +375,7 @@
             // LCecum
             // 
             this.LCecum.AutoSize = true;
-            this.LCecum.Location = new System.Drawing.Point(68, 462);
+            this.LCecum.Location = new System.Drawing.Point(12, 356);
             this.LCecum.Name = "LCecum";
             this.LCecum.Size = new System.Drawing.Size(40, 13);
             this.LCecum.TabIndex = 36;
@@ -381,7 +383,7 @@
             // 
             // TCecum
             // 
-            this.TCecum.Location = new System.Drawing.Point(193, 459);
+            this.TCecum.Location = new System.Drawing.Point(137, 353);
             this.TCecum.Name = "TCecum";
             this.TCecum.Size = new System.Drawing.Size(100, 20);
             this.TCecum.TabIndex = 35;
@@ -389,7 +391,7 @@
             // LColon
             // 
             this.LColon.AutoSize = true;
-            this.LColon.Location = new System.Drawing.Point(68, 488);
+            this.LColon.Location = new System.Drawing.Point(12, 382);
             this.LColon.Name = "LColon";
             this.LColon.Size = new System.Drawing.Size(34, 13);
             this.LColon.TabIndex = 38;
@@ -397,7 +399,7 @@
             // 
             // TColon
             // 
-            this.TColon.Location = new System.Drawing.Point(193, 485);
+            this.TColon.Location = new System.Drawing.Point(137, 379);
             this.TColon.Name = "TColon";
             this.TColon.Size = new System.Drawing.Size(100, 20);
             this.TColon.TabIndex = 37;
@@ -405,7 +407,7 @@
             // LSigmoid
             // 
             this.LSigmoid.AutoSize = true;
-            this.LSigmoid.Location = new System.Drawing.Point(68, 514);
+            this.LSigmoid.Location = new System.Drawing.Point(12, 408);
             this.LSigmoid.Name = "LSigmoid";
             this.LSigmoid.Size = new System.Drawing.Size(44, 13);
             this.LSigmoid.TabIndex = 40;
@@ -413,7 +415,7 @@
             // 
             // TSigmoid
             // 
-            this.TSigmoid.Location = new System.Drawing.Point(193, 511);
+            this.TSigmoid.Location = new System.Drawing.Point(137, 405);
             this.TSigmoid.Name = "TSigmoid";
             this.TSigmoid.Size = new System.Drawing.Size(100, 20);
             this.TSigmoid.TabIndex = 39;
@@ -421,7 +423,7 @@
             // LRectumRetroflexion
             // 
             this.LRectumRetroflexion.AutoSize = true;
-            this.LRectumRetroflexion.Location = new System.Drawing.Point(68, 540);
+            this.LRectumRetroflexion.Location = new System.Drawing.Point(12, 434);
             this.LRectumRetroflexion.Name = "LRectumRetroflexion";
             this.LRectumRetroflexion.Size = new System.Drawing.Size(100, 13);
             this.LRectumRetroflexion.TabIndex = 42;
@@ -429,7 +431,7 @@
             // 
             // TRectumRetroflexion
             // 
-            this.TRectumRetroflexion.Location = new System.Drawing.Point(193, 537);
+            this.TRectumRetroflexion.Location = new System.Drawing.Point(137, 431);
             this.TRectumRetroflexion.Name = "TRectumRetroflexion";
             this.TRectumRetroflexion.Size = new System.Drawing.Size(100, 20);
             this.TRectumRetroflexion.TabIndex = 41;
@@ -437,7 +439,7 @@
             // LConclusion
             // 
             this.LConclusion.AutoSize = true;
-            this.LConclusion.Location = new System.Drawing.Point(244, 566);
+            this.LConclusion.Location = new System.Drawing.Point(318, 447);
             this.LConclusion.Name = "LConclusion";
             this.LConclusion.Size = new System.Drawing.Size(59, 13);
             this.LConclusion.TabIndex = 44;
@@ -445,7 +447,7 @@
             // 
             // TConclusion
             // 
-            this.TConclusion.Location = new System.Drawing.Point(369, 563);
+            this.TConclusion.Location = new System.Drawing.Point(443, 444);
             this.TConclusion.Name = "TConclusion";
             this.TConclusion.Size = new System.Drawing.Size(100, 20);
             this.TConclusion.TabIndex = 43;
@@ -453,7 +455,7 @@
             // LEndoscopist
             // 
             this.LEndoscopist.AutoSize = true;
-            this.LEndoscopist.Location = new System.Drawing.Point(244, 592);
+            this.LEndoscopist.Location = new System.Drawing.Point(318, 473);
             this.LEndoscopist.Name = "LEndoscopist";
             this.LEndoscopist.Size = new System.Drawing.Size(65, 13);
             this.LEndoscopist.TabIndex = 46;
@@ -461,25 +463,25 @@
             // 
             // TEndoscopist
             // 
-            this.TEndoscopist.Location = new System.Drawing.Point(369, 589);
+            this.TEndoscopist.Location = new System.Drawing.Point(443, 470);
             this.TEndoscopist.Name = "TEndoscopist";
             this.TEndoscopist.Size = new System.Drawing.Size(100, 20);
             this.TEndoscopist.TabIndex = 45;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(604, 34);
+            this.button2.Location = new System.Drawing.Point(670, 208);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 47;
-            this.button2.Text = "button2";
+            this.button2.Text = "Insert";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LEsophagusGEJ
             // 
             this.LEsophagusGEJ.AutoSize = true;
-            this.LEsophagusGEJ.Location = new System.Drawing.Point(504, 358);
+            this.LEsophagusGEJ.Location = new System.Drawing.Point(635, 252);
             this.LEsophagusGEJ.Name = "LEsophagusGEJ";
             this.LEsophagusGEJ.Size = new System.Drawing.Size(80, 13);
             this.LEsophagusGEJ.TabIndex = 49;
@@ -487,7 +489,7 @@
             // 
             // TEsophagusGEJ
             // 
-            this.TEsophagusGEJ.Location = new System.Drawing.Point(629, 355);
+            this.TEsophagusGEJ.Location = new System.Drawing.Point(760, 249);
             this.TEsophagusGEJ.Name = "TEsophagusGEJ";
             this.TEsophagusGEJ.Size = new System.Drawing.Size(100, 20);
             this.TEsophagusGEJ.TabIndex = 48;
@@ -495,7 +497,7 @@
             // LStomach
             // 
             this.LStomach.AutoSize = true;
-            this.LStomach.Location = new System.Drawing.Point(504, 387);
+            this.LStomach.Location = new System.Drawing.Point(635, 281);
             this.LStomach.Name = "LStomach";
             this.LStomach.Size = new System.Drawing.Size(49, 13);
             this.LStomach.TabIndex = 51;
@@ -503,7 +505,7 @@
             // 
             // TStomach
             // 
-            this.TStomach.Location = new System.Drawing.Point(629, 384);
+            this.TStomach.Location = new System.Drawing.Point(760, 278);
             this.TStomach.Name = "TStomach";
             this.TStomach.Size = new System.Drawing.Size(100, 20);
             this.TStomach.TabIndex = 50;
@@ -511,7 +513,7 @@
             // LDuodenumD1
             // 
             this.LDuodenumD1.AutoSize = true;
-            this.LDuodenumD1.Location = new System.Drawing.Point(504, 413);
+            this.LDuodenumD1.Location = new System.Drawing.Point(635, 307);
             this.LDuodenumD1.Name = "LDuodenumD1";
             this.LDuodenumD1.Size = new System.Drawing.Size(73, 13);
             this.LDuodenumD1.TabIndex = 53;
@@ -519,7 +521,7 @@
             // 
             // TDuodenumD1
             // 
-            this.TDuodenumD1.Location = new System.Drawing.Point(629, 410);
+            this.TDuodenumD1.Location = new System.Drawing.Point(760, 304);
             this.TDuodenumD1.Name = "TDuodenumD1";
             this.TDuodenumD1.Size = new System.Drawing.Size(100, 20);
             this.TDuodenumD1.TabIndex = 52;
@@ -527,7 +529,7 @@
             // LD2
             // 
             this.LD2.AutoSize = true;
-            this.LD2.Location = new System.Drawing.Point(504, 439);
+            this.LD2.Location = new System.Drawing.Point(635, 333);
             this.LD2.Name = "LD2";
             this.LD2.Size = new System.Drawing.Size(21, 13);
             this.LD2.TabIndex = 55;
@@ -535,36 +537,58 @@
             // 
             // TD2
             // 
-            this.TD2.Location = new System.Drawing.Point(629, 436);
+            this.TD2.Location = new System.Drawing.Point(760, 330);
             this.TD2.Name = "TD2";
             this.TD2.Size = new System.Drawing.Size(100, 20);
             this.TD2.TabIndex = 54;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(71, 131);
+            this.button3.Location = new System.Drawing.Point(127, 203);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 56;
-            this.button3.Text = "button3";
+            this.button3.Text = "View Data";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(604, 141);
+            this.button4.Location = new System.Drawing.Point(760, 208);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 57;
-            this.button4.Text = "button4";
+            this.button4.Text = "View Data";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(704, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 25);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Stomache";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(87, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 25);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Colon";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 654);
+            this.ClientSize = new System.Drawing.Size(876, 509);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.LD2);
@@ -690,6 +714,8 @@
         private System.Windows.Forms.TextBox TD2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
