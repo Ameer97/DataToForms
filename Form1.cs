@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IssaForms.Models;
 using IssaForms.Db;
+using IssaForms.Enum;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 
@@ -21,6 +22,20 @@ namespace IssaForms
         public Form1()
         {
             InitializeComponent();
+            var PreparationList = new List<string>() 
+            {
+                Preparation.Good,
+                Preparation.Fair,
+                Preparation.Bad
+            };
+            CPreparation.DataSource = PreparationList;
+
+            var ScopeList = new List<string>()
+            {
+                Scope.Olympus,
+                Scope.Pentax,
+            };
+            CScope.DataSource = ScopeList;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,17 +47,17 @@ namespace IssaForms
                 FileNo = TFileNo.Text,
                 Date = dateTimePicker1.Value,
                 Premedication = TPremedication.Text,
-                Scope = TScope.Text,
+                Scope = CScope.Text,
                 ReferredDoctor = TReferredDoctor.Text,
                 ClinicalData = TClinicalData.Text,
-                Preparation = TPreparation.Text,
+                Preparation = CPreparation.Text,
                 AnalInspection = TAnalInspection.Text,
                 PRExam = TPRExam.Text,
                 Ileum = TIleum.Text,
                 ColonDetails = TColon.Text,
-                Rectum = TRectumRetroflexion.Text,
+                Rectum = TRectum.Text,
                 Conclusion = TConclusion.Text,
-                Assistant ="",
+                Assistant = TAssistant.Text,
             };
 
             _context.Colons.Add(Colon);
@@ -88,16 +103,16 @@ namespace IssaForms
                 FileNo = TFileNo.Text,
                 Date = dateTimePicker1.Value,
                 Premedication = TPremedication.Text,
-                Scope = TScope.Text,
+                Scope = CScope.Text,
                 ReferredDoctor = TReferredDoctor.Text,
                 ClinicalData = TClinicalData.Text,
-                //GEJ = TEsophagusGEJ.Text,
-                //Esophagus = TEsophagusGEJ.Text,
+                GEJ = TGEJ.Text,
+                Esophagus = TEsophagus.Text,
                 StomachDetails = TStomach.Text,
-                D1 = TDuodenumD1.Text,
+                D1 = TD1.Text,
                 D2 = TD2.Text,
                 Conclusion = TConclusion.Text,
-                Assistant = "",
+                Assistant = TAssistant.Text,
             };
             _context.Stomaches.Add(Stomach);
             _context.SaveChanges();
@@ -125,6 +140,16 @@ namespace IssaForms
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Restart();
+        }
+
+        private void SpeedStomache_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SpeedColon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
