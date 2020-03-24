@@ -8,9 +8,10 @@ namespace IssaForms.Models
 {
     public class Stomach : GeneralInformation
     {
-        public string EsophagusGEJ { get; set; }
+        public string GEJ { get; set; }
+        public string Esophagus { get; set; }
         public string StomachDetails { get; set; }
-        public string DuodenumD1 { get; set; }
+        public string D1 { get; set; }
         public string D2 { get; set; }
     }
 }

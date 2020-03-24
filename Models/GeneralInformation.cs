@@ -15,14 +15,9 @@ namespace IssaForms.Models
         public DateTime Date { get; set; }
         public string Premedication { get; set; }
         public string Scope { get; set; }
-        public string Olympus { get; set; }
         public string ReferredDoctor { get; set; }
-        public string Medazolam { get; set; }
-        public string Pentax { get; set; }
-        public string Others { get; set; }
-        public string Others1 { get; set; }
         public string ClinicalData { get; set; }
         public string Conclusion { get; set; }
-        public DateTime Endoscopist { get; set; }
+        public string Assistant { get; set; }
     }
 }
