@@ -34,9 +34,7 @@
             this.stomachesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stomachesTableAdapter = new IssaForms.StomacheDataSetTableAdapters.StomachesTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esophagusGEJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stomachDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.duodenumD1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.d2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,15 +42,13 @@
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.premedicationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scopeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.olympusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.referredDoctorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.medazolamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pentaxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.othersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.others1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clinicalDataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conclusionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endoscopistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gEJDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.esophagusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.d1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assistantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stomacheDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stomachesBindingSource)).BeginInit();
@@ -64,9 +60,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.esophagusGEJDataGridViewTextBoxColumn,
             this.stomachDetailsDataGridViewTextBoxColumn,
-            this.duodenumD1DataGridViewTextBoxColumn,
             this.d2DataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.ageDataGridViewTextBoxColumn,
@@ -74,15 +68,13 @@
             this.dateDataGridViewTextBoxColumn,
             this.premedicationDataGridViewTextBoxColumn,
             this.scopeDataGridViewTextBoxColumn,
-            this.olympusDataGridViewTextBoxColumn,
             this.referredDoctorDataGridViewTextBoxColumn,
-            this.medazolamDataGridViewTextBoxColumn,
-            this.pentaxDataGridViewTextBoxColumn,
-            this.othersDataGridViewTextBoxColumn,
-            this.others1DataGridViewTextBoxColumn,
             this.clinicalDataDataGridViewTextBoxColumn,
             this.conclusionDataGridViewTextBoxColumn,
-            this.endoscopistDataGridViewTextBoxColumn});
+            this.gEJDataGridViewTextBoxColumn,
+            this.esophagusDataGridViewTextBoxColumn,
+            this.d1DataGridViewTextBoxColumn,
+            this.assistantDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.stomachesBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -113,23 +105,11 @@
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // esophagusGEJDataGridViewTextBoxColumn
-            // 
-            this.esophagusGEJDataGridViewTextBoxColumn.DataPropertyName = "EsophagusGEJ";
-            this.esophagusGEJDataGridViewTextBoxColumn.HeaderText = "EsophagusGEJ";
-            this.esophagusGEJDataGridViewTextBoxColumn.Name = "esophagusGEJDataGridViewTextBoxColumn";
-            // 
             // stomachDetailsDataGridViewTextBoxColumn
             // 
             this.stomachDetailsDataGridViewTextBoxColumn.DataPropertyName = "StomachDetails";
             this.stomachDetailsDataGridViewTextBoxColumn.HeaderText = "StomachDetails";
             this.stomachDetailsDataGridViewTextBoxColumn.Name = "stomachDetailsDataGridViewTextBoxColumn";
-            // 
-            // duodenumD1DataGridViewTextBoxColumn
-            // 
-            this.duodenumD1DataGridViewTextBoxColumn.DataPropertyName = "DuodenumD1";
-            this.duodenumD1DataGridViewTextBoxColumn.HeaderText = "DuodenumD1";
-            this.duodenumD1DataGridViewTextBoxColumn.Name = "duodenumD1DataGridViewTextBoxColumn";
             // 
             // d2DataGridViewTextBoxColumn
             // 
@@ -173,41 +153,11 @@
             this.scopeDataGridViewTextBoxColumn.HeaderText = "Scope";
             this.scopeDataGridViewTextBoxColumn.Name = "scopeDataGridViewTextBoxColumn";
             // 
-            // olympusDataGridViewTextBoxColumn
-            // 
-            this.olympusDataGridViewTextBoxColumn.DataPropertyName = "Olympus";
-            this.olympusDataGridViewTextBoxColumn.HeaderText = "Olympus";
-            this.olympusDataGridViewTextBoxColumn.Name = "olympusDataGridViewTextBoxColumn";
-            // 
             // referredDoctorDataGridViewTextBoxColumn
             // 
             this.referredDoctorDataGridViewTextBoxColumn.DataPropertyName = "ReferredDoctor";
             this.referredDoctorDataGridViewTextBoxColumn.HeaderText = "ReferredDoctor";
             this.referredDoctorDataGridViewTextBoxColumn.Name = "referredDoctorDataGridViewTextBoxColumn";
-            // 
-            // medazolamDataGridViewTextBoxColumn
-            // 
-            this.medazolamDataGridViewTextBoxColumn.DataPropertyName = "Medazolam";
-            this.medazolamDataGridViewTextBoxColumn.HeaderText = "Medazolam";
-            this.medazolamDataGridViewTextBoxColumn.Name = "medazolamDataGridViewTextBoxColumn";
-            // 
-            // pentaxDataGridViewTextBoxColumn
-            // 
-            this.pentaxDataGridViewTextBoxColumn.DataPropertyName = "Pentax";
-            this.pentaxDataGridViewTextBoxColumn.HeaderText = "Pentax";
-            this.pentaxDataGridViewTextBoxColumn.Name = "pentaxDataGridViewTextBoxColumn";
-            // 
-            // othersDataGridViewTextBoxColumn
-            // 
-            this.othersDataGridViewTextBoxColumn.DataPropertyName = "Others";
-            this.othersDataGridViewTextBoxColumn.HeaderText = "Others";
-            this.othersDataGridViewTextBoxColumn.Name = "othersDataGridViewTextBoxColumn";
-            // 
-            // others1DataGridViewTextBoxColumn
-            // 
-            this.others1DataGridViewTextBoxColumn.DataPropertyName = "Others1";
-            this.others1DataGridViewTextBoxColumn.HeaderText = "Others1";
-            this.others1DataGridViewTextBoxColumn.Name = "others1DataGridViewTextBoxColumn";
             // 
             // clinicalDataDataGridViewTextBoxColumn
             // 
@@ -221,11 +171,29 @@
             this.conclusionDataGridViewTextBoxColumn.HeaderText = "Conclusion";
             this.conclusionDataGridViewTextBoxColumn.Name = "conclusionDataGridViewTextBoxColumn";
             // 
-            // endoscopistDataGridViewTextBoxColumn
+            // gEJDataGridViewTextBoxColumn
             // 
-            this.endoscopistDataGridViewTextBoxColumn.DataPropertyName = "Endoscopist";
-            this.endoscopistDataGridViewTextBoxColumn.HeaderText = "Endoscopist";
-            this.endoscopistDataGridViewTextBoxColumn.Name = "endoscopistDataGridViewTextBoxColumn";
+            this.gEJDataGridViewTextBoxColumn.DataPropertyName = "GEJ";
+            this.gEJDataGridViewTextBoxColumn.HeaderText = "GEJ";
+            this.gEJDataGridViewTextBoxColumn.Name = "gEJDataGridViewTextBoxColumn";
+            // 
+            // esophagusDataGridViewTextBoxColumn
+            // 
+            this.esophagusDataGridViewTextBoxColumn.DataPropertyName = "Esophagus";
+            this.esophagusDataGridViewTextBoxColumn.HeaderText = "Esophagus";
+            this.esophagusDataGridViewTextBoxColumn.Name = "esophagusDataGridViewTextBoxColumn";
+            // 
+            // d1DataGridViewTextBoxColumn
+            // 
+            this.d1DataGridViewTextBoxColumn.DataPropertyName = "D1";
+            this.d1DataGridViewTextBoxColumn.HeaderText = "D1";
+            this.d1DataGridViewTextBoxColumn.Name = "d1DataGridViewTextBoxColumn";
+            // 
+            // assistantDataGridViewTextBoxColumn
+            // 
+            this.assistantDataGridViewTextBoxColumn.DataPropertyName = "Assistant";
+            this.assistantDataGridViewTextBoxColumn.HeaderText = "Assistant";
+            this.assistantDataGridViewTextBoxColumn.Name = "assistantDataGridViewTextBoxColumn";
             // 
             // StomacheDataForm
             // 
@@ -250,9 +218,7 @@
         private System.Windows.Forms.BindingSource stomachesBindingSource;
         private StomacheDataSetTableAdapters.StomachesTableAdapter stomachesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn esophagusGEJDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stomachDetailsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn duodenumD1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn d2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
@@ -260,14 +226,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn premedicationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn scopeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn olympusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn referredDoctorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn medazolamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pentaxDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn othersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn others1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clinicalDataDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn conclusionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endoscopistDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gEJDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn esophagusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn d1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn assistantDataGridViewTextBoxColumn;
     }
 }

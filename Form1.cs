@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using IssaForms.Models;
-using IssaForms.Db;
+﻿using IssaForms.Db;
 using IssaForms.Enum;
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
+using IssaForms.Models;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace IssaForms
 {
@@ -22,7 +15,7 @@ namespace IssaForms
         public Form1()
         {
             InitializeComponent();
-            var PreparationList = new List<string>() 
+            var PreparationList = new List<string>()
             {
                 Preparation.Good,
                 Preparation.Fair,
@@ -144,12 +137,36 @@ namespace IssaForms
 
         private void SpeedStomache_Click(object sender, EventArgs e)
         {
-
+            SpeedAll();
+            TGEJ.Text = Interaction.InputBox("Input GEJ");
+            TEsophagus.Text = Interaction.InputBox("Input Esophagus");
+            TD1.Text = Interaction.InputBox("Input D1");
+            TD2.Text = Interaction.InputBox("Input D2");
+            TStomach.Text = Interaction.InputBox("Input Stomach");
         }
 
         private void SpeedColon_Click(object sender, EventArgs e)
         {
-
+            SpeedAll();
+            TAnalInspection.Text = Interaction.InputBox("Input Anal Inspection");
+            TPRExam.Text = Interaction.InputBox("Input PRExam");
+            TIleum.Text = Interaction.InputBox("Input Ileum");
+            TRectum.Text = Interaction.InputBox("Input Rectum");
+            TColon.Text = Interaction.InputBox("Input Colon");
+        }
+        void SpeedAll()
+        {
+            TName.Text = Interaction.InputBox("Input Name");
+            TAge.Text = Interaction.InputBox("Input Age");
+            TFileNo.Text = Interaction.InputBox("Input File No");
+            TPremedication.Text = Interaction.InputBox("Input Premedication");
+            //CScope.Text = (Interaction.InputBox("Input Premedication") == "Pentax")
+            //                ? "Pentax"
+            //                : "Olympus";
+            TReferredDoctor.Text = Interaction.InputBox("Input Refered Doctor");
+            TClinicalData.Text = Interaction.InputBox("Input Clinical Data");
+            TConclusion.Text = Interaction.InputBox("Input Conclusion");
+            TAssistant.Text = Interaction.InputBox("Input Assistant");
         }
     }
 }

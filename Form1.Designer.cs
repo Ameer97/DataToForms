@@ -118,9 +118,9 @@
             this.LFileNo.AutoSize = true;
             this.LFileNo.Location = new System.Drawing.Point(24, 68);
             this.LFileNo.Name = "LFileNo";
-            this.LFileNo.Size = new System.Drawing.Size(37, 13);
+            this.LFileNo.Size = new System.Drawing.Size(40, 13);
             this.LFileNo.TabIndex = 5;
-            this.LFileNo.Text = "FileNo";
+            this.LFileNo.Text = "File No";
             // 
             // TFileNo
             // 
@@ -178,9 +178,9 @@
             this.LReferredDoctor.AutoSize = true;
             this.LReferredDoctor.Location = new System.Drawing.Point(24, 200);
             this.LReferredDoctor.Name = "LReferredDoctor";
-            this.LReferredDoctor.Size = new System.Drawing.Size(80, 13);
+            this.LReferredDoctor.Size = new System.Drawing.Size(83, 13);
             this.LReferredDoctor.TabIndex = 16;
-            this.LReferredDoctor.Text = "ReferredDoctor";
+            this.LReferredDoctor.Text = "Referred Doctor";
             // 
             // TReferredDoctor
             // 
@@ -194,9 +194,9 @@
             this.LClinicalData.AutoSize = true;
             this.LClinicalData.Location = new System.Drawing.Point(24, 244);
             this.LClinicalData.Name = "LClinicalData";
-            this.LClinicalData.Size = new System.Drawing.Size(63, 13);
+            this.LClinicalData.Size = new System.Drawing.Size(66, 13);
             this.LClinicalData.TabIndex = 26;
-            this.LClinicalData.Text = "ClinicalData";
+            this.LClinicalData.Text = "Clinical Data";
             // 
             // TClinicalData
             // 
@@ -220,9 +220,9 @@
             this.LAnalInspection.AutoSize = true;
             this.LAnalInspection.Location = new System.Drawing.Point(488, 124);
             this.LAnalInspection.Name = "LAnalInspection";
-            this.LAnalInspection.Size = new System.Drawing.Size(77, 13);
+            this.LAnalInspection.Size = new System.Drawing.Size(80, 13);
             this.LAnalInspection.TabIndex = 30;
-            this.LAnalInspection.Text = "AnalInspection";
+            this.LAnalInspection.Text = "Anal Inspection";
             // 
             // TAnalInspection
             // 
