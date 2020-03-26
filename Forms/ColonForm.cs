@@ -8,11 +8,11 @@ using Microsoft.VisualBasic;
 
 namespace IssaForms
 {
-    public partial class Form1 : Form
+    public partial class ColonForm : Form
     {
         public FormsDbContext _context = new FormsDbContext();
 
-        public Form1()
+        public ColonForm()
         {
             InitializeComponent();
             var PreparationList = new List<string>()
@@ -87,36 +87,7 @@ namespace IssaForms
             //txt1 = TName;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var Stomach = new Stomach
-            {
-                Name = TName.Text,
-                Age = TAge.Text,
-                FileNo = TFileNo.Text,
-                Date = dateTimePicker1.Value,
-                Premedication = TPremedication.Text,
-                Scope = CScope.Text,
-                ReferredDoctor = TReferredDoctor.Text,
-                ClinicalData = TClinicalData.Text,
-                GEJ = TGEJ.Text,
-                Esophagus = TEsophagus.Text,
-                StomachDetails = TStomach.Text,
-                D1 = TD1.Text,
-                D2 = TD2.Text,
-                Conclusion = TConclusion.Text,
-                Assistant = TAssistant.Text,
-            };
-            _context.Stomaches.Add(Stomach);
-            _context.SaveChanges();
-
-            CrystalReport2 cr = new CrystalReport2();
-            cr.SetParameterValue("@Id", Stomach.Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
-        }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -124,26 +95,14 @@ namespace IssaForms
             ColonForm.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            var StomacheForm = new StomacheDataForm();
-            StomacheForm.Show();
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
 
-        private void SpeedStomache_Click(object sender, EventArgs e)
-        {
-            SpeedAll();
-            TGEJ.Text = Interaction.InputBox("Input GEJ");
-            TEsophagus.Text = Interaction.InputBox("Input Esophagus");
-            TD1.Text = Interaction.InputBox("Input D1");
-            TD2.Text = Interaction.InputBox("Input D2");
-            TStomach.Text = Interaction.InputBox("Input Stomach");
-        }
+       
 
         private void SpeedColon_Click(object sender, EventArgs e)
         {
