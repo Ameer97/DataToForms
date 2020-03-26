@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.stomacheDataSet = new IssaForms.StomacheDataSet();
+            this.stomachDataSet = new IssaForms.StomachDataSet();
             this.stomachesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stomachesTableAdapter = new IssaForms.StomacheDataSetTableAdapters.StomachesTableAdapter();
+            this.stomachesTableAdapter = new IssaForms.StomachDataSetTableAdapters.StomachesTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stomachDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.d2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,8 +49,10 @@
             this.esophagusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.d1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assistantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endoscopistDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stomacheDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stomachDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stomachesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +76,9 @@
             this.gEJDataGridViewTextBoxColumn,
             this.esophagusDataGridViewTextBoxColumn,
             this.d1DataGridViewTextBoxColumn,
-            this.assistantDataGridViewTextBoxColumn});
+            this.assistantDataGridViewTextBoxColumn,
+            this.endoscopistDataGridViewTextBoxColumn,
+            this.genderDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.stomachesBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -84,15 +88,15 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
-            // stomacheDataSet
+            // stomachDataSet
             // 
-            this.stomacheDataSet.DataSetName = "StomacheDataSet";
-            this.stomacheDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.stomachDataSet.DataSetName = "StomachDataSet";
+            this.stomachDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // stomachesBindingSource
             // 
             this.stomachesBindingSource.DataMember = "Stomaches";
-            this.stomachesBindingSource.DataSource = this.stomacheDataSet;
+            this.stomachesBindingSource.DataSource = this.stomachDataSet;
             // 
             // stomachesTableAdapter
             // 
@@ -195,6 +199,18 @@
             this.assistantDataGridViewTextBoxColumn.HeaderText = "Assistant";
             this.assistantDataGridViewTextBoxColumn.Name = "assistantDataGridViewTextBoxColumn";
             // 
+            // endoscopistDataGridViewTextBoxColumn
+            // 
+            this.endoscopistDataGridViewTextBoxColumn.DataPropertyName = "Endoscopist";
+            this.endoscopistDataGridViewTextBoxColumn.HeaderText = "Endoscopist";
+            this.endoscopistDataGridViewTextBoxColumn.Name = "endoscopistDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
             // StomacheDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,7 +221,7 @@
             this.Text = "StomacheDataForm";
             this.Load += new System.EventHandler(this.StomacheDataForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stomacheDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stomachDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stomachesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -214,9 +230,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private StomacheDataSet stomacheDataSet;
+        private StomachDataSet stomachDataSet;
         private System.Windows.Forms.BindingSource stomachesBindingSource;
-        private StomacheDataSetTableAdapters.StomachesTableAdapter stomachesTableAdapter;
+        private StomachDataSetTableAdapters.StomachesTableAdapter stomachesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stomachDetailsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn d2DataGridViewTextBoxColumn;
@@ -233,5 +249,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn esophagusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn d1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn assistantDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endoscopistDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
     }
 }

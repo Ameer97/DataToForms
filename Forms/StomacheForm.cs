@@ -20,6 +20,13 @@ namespace IssaForms.Forms
                 Scope.Pentax,
             };
             CScope.DataSource = ScopeList;
+
+            var GenderList = new List<string>()
+            {
+                Gender.Male,
+                Gender.Female,
+            };
+            CGender.DataSource = GenderList;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,6 +35,7 @@ namespace IssaForms.Forms
             {
                 Name = TName.Text,
                 Age = TAge.Text,
+                Gender = CGender.Text,
                 FileNo = TFileNo.Text,
                 Date = dateTimePicker1.Value,
                 Premedication = TPremedication.Text,
@@ -41,6 +49,7 @@ namespace IssaForms.Forms
                 D2 = TD2.Text,
                 Conclusion = TConclusion.Text,
                 Assistant = TAssistant.Text,
+                Endoscopist = TEndoscopist.Text,
             };
             _context.Stomaches.Add(Stomach);
             _context.SaveChanges();
@@ -58,9 +67,13 @@ namespace IssaForms.Forms
             SpeedAll();
             TGEJ.Text = Interaction.InputBox("Input GEJ");
             TEsophagus.Text = Interaction.InputBox("Input Esophagus");
+            TStomach.Text = Interaction.InputBox("Input Stomach");
             TD1.Text = Interaction.InputBox("Input D1");
             TD2.Text = Interaction.InputBox("Input D2");
-            TStomach.Text = Interaction.InputBox("Input Stomach");
+
+            TConclusion.Text = Interaction.InputBox("Input Conclusion");
+            TEndoscopist.Text = Interaction.InputBox("Input Endoscopist");
+            TAssistant.Text = Interaction.InputBox("Input Assistant");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -74,13 +87,11 @@ namespace IssaForms.Forms
             TAge.Text = Interaction.InputBox("Input Age");
             TFileNo.Text = Interaction.InputBox("Input File No");
             TPremedication.Text = Interaction.InputBox("Input Premedication");
-            //CScope.Text = (Interaction.InputBox("Input Premedication") == "Pentax")
-            //                ? "Pentax"
-            //                : "Olympus";
-            TReferredDoctor.Text = Interaction.InputBox("Input Refered Doctor");
+            TReferredDoctor.Text = Interaction.InputBox("Input Referred Doctor");
             TClinicalData.Text = Interaction.InputBox("Input Clinical Data");
-            TConclusion.Text = Interaction.InputBox("Input Conclusion");
-            TAssistant.Text = Interaction.InputBox("Input Assistant");
+
+
+
         }
     }
 }

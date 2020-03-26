@@ -158,6 +158,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ColonDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Enum\Gender.cs" />
     <Compile Include="Forms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +216,14 @@
     <Compile Include="Migrations\202003241129197_ManyChangesAtAll.designer.cs">
       <DependentUpon>202003241129197_ManyChangesAtAll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003261325384_addEndscopist.cs" />
+    <Compile Include="Migrations\202003261325384_addEndscopist.designer.cs">
+      <DependentUpon>202003261325384_addEndscopist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003261342032_addGender.cs" />
+    <Compile Include="Migrations\202003261342032_addGender.designer.cs">
+      <DependentUpon>202003261342032_addGender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Colon.cs" />
     <Compile Include="Models\GeneralInformation.cs" />
@@ -233,10 +242,10 @@
     <Compile Include="Forms\StomacheDataForm.Designer.cs">
       <DependentUpon>StomacheDataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StomacheDataSet.Designer.cs">
+    <Compile Include="StomachDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+      <DependentUpon>StomachDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
@@ -263,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003241129197_ManyChangesAtAll.resx">
       <DependentUpon>202003241129197_ManyChangesAtAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003261325384_addEndscopist.resx">
+      <DependentUpon>202003261325384_addEndscopist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003261342032_addGender.resx">
+      <DependentUpon>202003261342032_addGender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -322,16 +337,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="StomacheDataSet.xsc">
-      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+    <None Include="StomachDataSet.xsc">
+      <DependentUpon>StomachDataSet.xsd</DependentUpon>
     </None>
-    <None Include="StomacheDataSet.xsd">
+    <None Include="StomachDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StomacheDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>StomachDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="StomacheDataSet.xss">
-      <DependentUpon>StomacheDataSet.xsd</DependentUpon>
+    <None Include="StomachDataSet.xss">
+      <DependentUpon>StomachDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
