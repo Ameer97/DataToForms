@@ -235,6 +235,7 @@
             this.SpeedStomache.TabIndex = 100;
             this.SpeedStomache.Text = "Speed";
             this.SpeedStomache.UseVisualStyleBackColor = true;
+            this.SpeedStomache.Click += new System.EventHandler(this.SpeedStomache_Click);
             // 
             // LEsophagus
             // 
@@ -270,6 +271,7 @@
             this.button4.TabIndex = 96;
             this.button4.Text = "View Data";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // LD2
             // 
@@ -344,6 +346,7 @@
             this.button2.TabIndex = 87;
             this.button2.Text = "Insert";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // StomacheForm
             // 

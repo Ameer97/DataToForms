@@ -1,10 +1,10 @@
 ﻿using IssaForms.Db;
 using IssaForms.Enum;
 using IssaForms.Models;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
 
 namespace IssaForms
 {
@@ -87,22 +87,13 @@ namespace IssaForms
             //txt1 = TName;
         }
 
-       
+
 
         private void button3_Click(object sender, EventArgs e)
         {
             var ColonForm = new ColonDataForm();
             ColonForm.Show();
         }
-
-       
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-        }
-
-       
 
         private void SpeedColon_Click(object sender, EventArgs e)
         {
