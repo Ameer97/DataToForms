@@ -19,6 +19,8 @@ namespace IssaForms
 
         private void StomacheDataForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'stomachDataSet.Stomaches' table. You can move, or remove it, as needed.
+            this.stomachesTableAdapter.Fill(this.stomachDataSet.Stomaches);
             // TODO: This line of code loads data into the 'stomacheDataSet.Stomaches' table. You can move, or remove it, as needed.
             this.stomachesTableAdapter.Fill(this.stomachDataSet.Stomaches);
 

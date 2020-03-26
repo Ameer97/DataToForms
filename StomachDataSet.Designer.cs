@@ -281,13 +281,11 @@ namespace IssaForms {
             
             private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnStomachDetails;
-            
-            private global::System.Data.DataColumn columnD2;
-            
             private global::System.Data.DataColumn columnName;
             
             private global::System.Data.DataColumn columnAge;
+            
+            private global::System.Data.DataColumn columnGender;
             
             private global::System.Data.DataColumn columnFileNo;
             
@@ -301,19 +299,21 @@ namespace IssaForms {
             
             private global::System.Data.DataColumn columnClinicalData;
             
-            private global::System.Data.DataColumn columnConclusion;
-            
             private global::System.Data.DataColumn columnGEJ;
             
             private global::System.Data.DataColumn columnEsophagus;
             
+            private global::System.Data.DataColumn columnStomachDetails;
+            
             private global::System.Data.DataColumn columnD1;
+            
+            private global::System.Data.DataColumn columnD2;
+            
+            private global::System.Data.DataColumn columnConclusion;
             
             private global::System.Data.DataColumn columnAssistant;
             
             private global::System.Data.DataColumn columnEndoscopist;
-            
-            private global::System.Data.DataColumn columnGender;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -358,22 +358,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn StomachDetailsColumn {
-                get {
-                    return this.columnStomachDetails;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn D2Column {
-                get {
-                    return this.columnD2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn NameColumn {
                 get {
                     return this.columnName;
@@ -385,6 +369,14 @@ namespace IssaForms {
             public global::System.Data.DataColumn AgeColumn {
                 get {
                     return this.columnAge;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn GenderColumn {
+                get {
+                    return this.columnGender;
                 }
             }
             
@@ -438,14 +430,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ConclusionColumn {
-                get {
-                    return this.columnConclusion;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn GEJColumn {
                 get {
                     return this.columnGEJ;
@@ -462,9 +446,33 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn StomachDetailsColumn {
+                get {
+                    return this.columnStomachDetails;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn D1Column {
                 get {
                     return this.columnD1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn D2Column {
+                get {
+                    return this.columnD2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ConclusionColumn {
+                get {
+                    return this.columnConclusion;
                 }
             }
             
@@ -481,14 +489,6 @@ namespace IssaForms {
             public global::System.Data.DataColumn EndoscopistColumn {
                 get {
                     return this.columnEndoscopist;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn GenderColumn {
-                get {
-                    return this.columnGender;
                 }
             }
             
@@ -530,43 +530,43 @@ namespace IssaForms {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public StomachesRow AddStomachesRow(
-                        string StomachDetails, 
-                        string D2, 
                         string Name, 
                         string Age, 
+                        string Gender, 
                         string FileNo, 
                         System.DateTime Date, 
                         string Premedication, 
                         string Scope, 
                         string ReferredDoctor, 
                         string ClinicalData, 
-                        string Conclusion, 
                         string GEJ, 
                         string Esophagus, 
+                        string StomachDetails, 
                         string D1, 
+                        string D2, 
+                        string Conclusion, 
                         string Assistant, 
-                        string Endoscopist, 
-                        string Gender) {
+                        string Endoscopist) {
                 StomachesRow rowStomachesRow = ((StomachesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        StomachDetails,
-                        D2,
                         Name,
                         Age,
+                        Gender,
                         FileNo,
                         Date,
                         Premedication,
                         Scope,
                         ReferredDoctor,
                         ClinicalData,
-                        Conclusion,
                         GEJ,
                         Esophagus,
+                        StomachDetails,
                         D1,
+                        D2,
+                        Conclusion,
                         Assistant,
-                        Endoscopist,
-                        Gender};
+                        Endoscopist};
                 rowStomachesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStomachesRow);
                 return rowStomachesRow;
@@ -597,23 +597,23 @@ namespace IssaForms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
-                this.columnStomachDetails = base.Columns["StomachDetails"];
-                this.columnD2 = base.Columns["D2"];
                 this.columnName = base.Columns["Name"];
                 this.columnAge = base.Columns["Age"];
+                this.columnGender = base.Columns["Gender"];
                 this.columnFileNo = base.Columns["FileNo"];
                 this.columnDate = base.Columns["Date"];
                 this.columnPremedication = base.Columns["Premedication"];
                 this.columnScope = base.Columns["Scope"];
                 this.columnReferredDoctor = base.Columns["ReferredDoctor"];
                 this.columnClinicalData = base.Columns["ClinicalData"];
-                this.columnConclusion = base.Columns["Conclusion"];
                 this.columnGEJ = base.Columns["GEJ"];
                 this.columnEsophagus = base.Columns["Esophagus"];
+                this.columnStomachDetails = base.Columns["StomachDetails"];
                 this.columnD1 = base.Columns["D1"];
+                this.columnD2 = base.Columns["D2"];
+                this.columnConclusion = base.Columns["Conclusion"];
                 this.columnAssistant = base.Columns["Assistant"];
                 this.columnEndoscopist = base.Columns["Endoscopist"];
-                this.columnGender = base.Columns["Gender"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -621,14 +621,12 @@ namespace IssaForms {
             private void InitClass() {
                 this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnId);
-                this.columnStomachDetails = new global::System.Data.DataColumn("StomachDetails", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStomachDetails);
-                this.columnD2 = new global::System.Data.DataColumn("D2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnD2);
                 this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName);
                 this.columnAge = new global::System.Data.DataColumn("Age", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAge);
+                this.columnGender = new global::System.Data.DataColumn("Gender", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGender);
                 this.columnFileNo = new global::System.Data.DataColumn("FileNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFileNo);
                 this.columnDate = new global::System.Data.DataColumn("Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -641,20 +639,22 @@ namespace IssaForms {
                 base.Columns.Add(this.columnReferredDoctor);
                 this.columnClinicalData = new global::System.Data.DataColumn("ClinicalData", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnClinicalData);
-                this.columnConclusion = new global::System.Data.DataColumn("Conclusion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnConclusion);
                 this.columnGEJ = new global::System.Data.DataColumn("GEJ", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGEJ);
                 this.columnEsophagus = new global::System.Data.DataColumn("Esophagus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEsophagus);
+                this.columnStomachDetails = new global::System.Data.DataColumn("StomachDetails", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStomachDetails);
                 this.columnD1 = new global::System.Data.DataColumn("D1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnD1);
+                this.columnD2 = new global::System.Data.DataColumn("D2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnD2);
+                this.columnConclusion = new global::System.Data.DataColumn("Conclusion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnConclusion);
                 this.columnAssistant = new global::System.Data.DataColumn("Assistant", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAssistant);
                 this.columnEndoscopist = new global::System.Data.DataColumn("Endoscopist", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEndoscopist);
-                this.columnGender = new global::System.Data.DataColumn("Gender", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGender);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -663,23 +663,23 @@ namespace IssaForms {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
-                this.columnStomachDetails.MaxLength = 2147483647;
-                this.columnD2.MaxLength = 2147483647;
                 this.columnName.MaxLength = 2147483647;
                 this.columnAge.MaxLength = 2147483647;
+                this.columnGender.MaxLength = 2147483647;
                 this.columnFileNo.MaxLength = 2147483647;
                 this.columnDate.AllowDBNull = false;
                 this.columnPremedication.MaxLength = 2147483647;
                 this.columnScope.MaxLength = 2147483647;
                 this.columnReferredDoctor.MaxLength = 2147483647;
                 this.columnClinicalData.MaxLength = 2147483647;
-                this.columnConclusion.MaxLength = 2147483647;
                 this.columnGEJ.MaxLength = 2147483647;
                 this.columnEsophagus.MaxLength = 2147483647;
+                this.columnStomachDetails.MaxLength = 2147483647;
                 this.columnD1.MaxLength = 2147483647;
+                this.columnD2.MaxLength = 2147483647;
+                this.columnConclusion.MaxLength = 2147483647;
                 this.columnAssistant.MaxLength = 2147483647;
                 this.columnEndoscopist.MaxLength = 2147483647;
-                this.columnGender.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -833,38 +833,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string StomachDetails {
-                get {
-                    try {
-                        return ((string)(this[this.tableStomaches.StomachDetailsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StomachDetails\' in table \'Stomaches\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableStomaches.StomachDetailsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string D2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableStomaches.D2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'D2\' in table \'Stomaches\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableStomaches.D2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string Name {
                 get {
                     try {
@@ -892,6 +860,22 @@ namespace IssaForms {
                 }
                 set {
                     this[this.tableStomaches.AgeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Gender {
+                get {
+                    try {
+                        return ((string)(this[this.tableStomaches.GenderColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Gender\' in table \'Stomaches\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStomaches.GenderColumn] = value;
                 }
             }
             
@@ -988,22 +972,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Conclusion {
-                get {
-                    try {
-                        return ((string)(this[this.tableStomaches.ConclusionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Conclusion\' in table \'Stomaches\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableStomaches.ConclusionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string GEJ {
                 get {
                     try {
@@ -1036,6 +1004,22 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string StomachDetails {
+                get {
+                    try {
+                        return ((string)(this[this.tableStomaches.StomachDetailsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StomachDetails\' in table \'Stomaches\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStomaches.StomachDetailsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string D1 {
                 get {
                     try {
@@ -1047,6 +1031,38 @@ namespace IssaForms {
                 }
                 set {
                     this[this.tableStomaches.D1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string D2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableStomaches.D2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'D2\' in table \'Stomaches\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStomaches.D2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Conclusion {
+                get {
+                    try {
+                        return ((string)(this[this.tableStomaches.ConclusionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Conclusion\' in table \'Stomaches\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStomaches.ConclusionColumn] = value;
                 }
             }
             
@@ -1084,46 +1100,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Gender {
-                get {
-                    try {
-                        return ((string)(this[this.tableStomaches.GenderColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Gender\' in table \'Stomaches\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableStomaches.GenderColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsStomachDetailsNull() {
-                return this.IsNull(this.tableStomaches.StomachDetailsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetStomachDetailsNull() {
-                this[this.tableStomaches.StomachDetailsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsD2Null() {
-                return this.IsNull(this.tableStomaches.D2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetD2Null() {
-                this[this.tableStomaches.D2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsNameNull() {
                 return this.IsNull(this.tableStomaches.NameColumn);
             }
@@ -1144,6 +1120,18 @@ namespace IssaForms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetAgeNull() {
                 this[this.tableStomaches.AgeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGenderNull() {
+                return this.IsNull(this.tableStomaches.GenderColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGenderNull() {
+                this[this.tableStomaches.GenderColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1208,18 +1196,6 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsConclusionNull() {
-                return this.IsNull(this.tableStomaches.ConclusionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetConclusionNull() {
-                this[this.tableStomaches.ConclusionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsGEJNull() {
                 return this.IsNull(this.tableStomaches.GEJColumn);
             }
@@ -1244,6 +1220,18 @@ namespace IssaForms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsStomachDetailsNull() {
+                return this.IsNull(this.tableStomaches.StomachDetailsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetStomachDetailsNull() {
+                this[this.tableStomaches.StomachDetailsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsD1Null() {
                 return this.IsNull(this.tableStomaches.D1Column);
             }
@@ -1252,6 +1240,30 @@ namespace IssaForms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetD1Null() {
                 this[this.tableStomaches.D1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsD2Null() {
+                return this.IsNull(this.tableStomaches.D2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetD2Null() {
+                this[this.tableStomaches.D2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsConclusionNull() {
+                return this.IsNull(this.tableStomaches.ConclusionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetConclusionNull() {
+                this[this.tableStomaches.ConclusionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1276,18 +1288,6 @@ namespace IssaForms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetEndoscopistNull() {
                 this[this.tableStomaches.EndoscopistColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsGenderNull() {
-                return this.IsNull(this.tableStomaches.GenderColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetGenderNull() {
-                this[this.tableStomaches.GenderColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1451,23 +1451,23 @@ namespace IssaForms.StomachDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Stomaches";
             tableMapping.ColumnMappings.Add("Id", "Id");
-            tableMapping.ColumnMappings.Add("StomachDetails", "StomachDetails");
-            tableMapping.ColumnMappings.Add("D2", "D2");
             tableMapping.ColumnMappings.Add("Name", "Name");
             tableMapping.ColumnMappings.Add("Age", "Age");
+            tableMapping.ColumnMappings.Add("Gender", "Gender");
             tableMapping.ColumnMappings.Add("FileNo", "FileNo");
             tableMapping.ColumnMappings.Add("Date", "Date");
             tableMapping.ColumnMappings.Add("Premedication", "Premedication");
             tableMapping.ColumnMappings.Add("Scope", "Scope");
             tableMapping.ColumnMappings.Add("ReferredDoctor", "ReferredDoctor");
             tableMapping.ColumnMappings.Add("ClinicalData", "ClinicalData");
-            tableMapping.ColumnMappings.Add("Conclusion", "Conclusion");
             tableMapping.ColumnMappings.Add("GEJ", "GEJ");
             tableMapping.ColumnMappings.Add("Esophagus", "Esophagus");
+            tableMapping.ColumnMappings.Add("StomachDetails", "StomachDetails");
             tableMapping.ColumnMappings.Add("D1", "D1");
+            tableMapping.ColumnMappings.Add("D2", "D2");
+            tableMapping.ColumnMappings.Add("Conclusion", "Conclusion");
             tableMapping.ColumnMappings.Add("Assistant", "Assistant");
             tableMapping.ColumnMappings.Add("Endoscopist", "Endoscopist");
-            tableMapping.ColumnMappings.Add("Gender", "Gender");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -1478,48 +1478,48 @@ namespace IssaForms.StomachDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Stomaches] ([StomachDetails], [D2], [Name], [Age], [FileNo], [Date], [Premedication], [Scope], [ReferredDoctor], [ClinicalData], [Conclusion], [GEJ], [Esophagus], [D1], [Assistant], [Endoscopist], [Gender]) VALUES (@StomachDetails, @D2, @Name, @Age, @FileNo, @Date, @Premedication, @Scope, @ReferredDoctor, @ClinicalData, @Conclusion, @GEJ, @Esophagus, @D1, @Assistant, @Endoscopist, @Gender);
-SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, Conclusion, GEJ, Esophagus, D1, Assistant, Endoscopist, Gender FROM Stomaches WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Stomaches] ([Name], [Age], [Gender], [FileNo], [Date], [Premedication], [Scope], [ReferredDoctor], [ClinicalData], [GEJ], [Esophagus], [StomachDetails], [D1], [D2], [Conclusion], [Assistant], [Endoscopist]) VALUES (@Name, @Age, @Gender, @FileNo, @Date, @Premedication, @Scope, @ReferredDoctor, @ClinicalData, @GEJ, @Esophagus, @StomachDetails, @D1, @D2, @Conclusion, @Assistant, @Endoscopist);
+SELECT Id, Name, Age, Gender, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, GEJ, Esophagus, StomachDetails, D1, D2, Conclusion, Assistant, Endoscopist FROM Stomaches WHERE (Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StomachDetails", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StomachDetails", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Age", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FileNo", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FileNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Premedication", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Premedication", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Scope", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Scope", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReferredDoctor", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ReferredDoctor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClinicalData", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClinicalData", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Conclusion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Conclusion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GEJ", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "GEJ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Esophagus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Esophagus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StomachDetails", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StomachDetails", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Conclusion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Conclusion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Assistant", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Assistant", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Endoscopist", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endoscopist", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Stomaches] SET [StomachDetails] = @StomachDetails, [D2] = @D2, [Name] = @Name, [Age] = @Age, [FileNo] = @FileNo, [Date] = @Date, [Premedication] = @Premedication, [Scope] = @Scope, [ReferredDoctor] = @ReferredDoctor, [ClinicalData] = @ClinicalData, [Conclusion] = @Conclusion, [GEJ] = @GEJ, [Esophagus] = @Esophagus, [D1] = @D1, [Assistant] = @Assistant, [Endoscopist] = @Endoscopist, [Gender] = @Gender WHERE (([Id] = @Original_Id) AND ([Date] = @Original_Date));
-SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, Conclusion, GEJ, Esophagus, D1, Assistant, Endoscopist, Gender FROM Stomaches WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Stomaches] SET [Name] = @Name, [Age] = @Age, [Gender] = @Gender, [FileNo] = @FileNo, [Date] = @Date, [Premedication] = @Premedication, [Scope] = @Scope, [ReferredDoctor] = @ReferredDoctor, [ClinicalData] = @ClinicalData, [GEJ] = @GEJ, [Esophagus] = @Esophagus, [StomachDetails] = @StomachDetails, [D1] = @D1, [D2] = @D2, [Conclusion] = @Conclusion, [Assistant] = @Assistant, [Endoscopist] = @Endoscopist WHERE (([Id] = @Original_Id) AND ([Date] = @Original_Date));
+SELECT Id, Name, Age, Gender, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, GEJ, Esophagus, StomachDetails, D1, D2, Conclusion, Assistant, Endoscopist FROM Stomaches WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StomachDetails", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StomachDetails", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Age", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FileNo", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FileNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Premedication", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Premedication", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Scope", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Scope", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReferredDoctor", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ReferredDoctor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ClinicalData", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ClinicalData", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Conclusion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Conclusion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GEJ", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "GEJ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Esophagus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Esophagus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StomachDetails", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StomachDetails", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@D2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "D2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Conclusion", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Conclusion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Assistant", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Assistant", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Endoscopist", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Endoscopist", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1538,9 +1538,9 @@ SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, Re
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, Ref" +
-                "erredDoctor, ClinicalData, Conclusion, GEJ, Esophagus, D1, Assistant, Endoscopis" +
-                "t, Gender FROM dbo.Stomaches";
+            this._commandCollection[0].CommandText = "SELECT Id, Name, Age, Gender, FileNo, Date, Premedication, Scope, ReferredDoctor," +
+                " ClinicalData, GEJ, Esophagus, StomachDetails, D1, D2, Conclusion, Assistant, En" +
+                "doscopist FROM dbo.Stomaches";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1625,119 +1625,119 @@ SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, Re
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string StomachDetails, 
-                    string D2, 
                     string Name, 
                     string Age, 
+                    string Gender, 
                     string FileNo, 
                     System.DateTime Date, 
                     string Premedication, 
                     string Scope, 
                     string ReferredDoctor, 
                     string ClinicalData, 
-                    string Conclusion, 
                     string GEJ, 
                     string Esophagus, 
+                    string StomachDetails, 
                     string D1, 
+                    string D2, 
+                    string Conclusion, 
                     string Assistant, 
-                    string Endoscopist, 
-                    string Gender) {
-            if ((StomachDetails == null)) {
+                    string Endoscopist) {
+            if ((Name == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(StomachDetails));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Name));
             }
-            if ((D2 == null)) {
+            if ((Age == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(D2));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Age));
             }
-            if ((Name == null)) {
+            if ((Gender == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Name));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Gender));
             }
-            if ((Age == null)) {
+            if ((FileNo == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Age));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(FileNo));
             }
-            if ((FileNo == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(Date));
+            if ((Premedication == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(FileNo));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Premedication));
             }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(Date));
-            if ((Premedication == null)) {
+            if ((Scope == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Premedication));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Scope));
             }
-            if ((Scope == null)) {
+            if ((ReferredDoctor == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Scope));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(ReferredDoctor));
             }
-            if ((ReferredDoctor == null)) {
+            if ((ClinicalData == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(ReferredDoctor));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(ClinicalData));
             }
-            if ((ClinicalData == null)) {
+            if ((GEJ == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(ClinicalData));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(GEJ));
             }
-            if ((Conclusion == null)) {
+            if ((Esophagus == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Conclusion));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Esophagus));
             }
-            if ((GEJ == null)) {
+            if ((StomachDetails == null)) {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(GEJ));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(StomachDetails));
             }
-            if ((Esophagus == null)) {
+            if ((D1 == null)) {
                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Esophagus));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(D1));
             }
-            if ((D1 == null)) {
+            if ((D2 == null)) {
                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(D1));
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(D2));
             }
-            if ((Assistant == null)) {
+            if ((Conclusion == null)) {
                 this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Assistant));
+                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Conclusion));
             }
-            if ((Endoscopist == null)) {
+            if ((Assistant == null)) {
                 this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(Endoscopist));
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(Assistant));
             }
-            if ((Gender == null)) {
+            if ((Endoscopist == null)) {
                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(Gender));
+                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(Endoscopist));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1760,122 +1760,122 @@ SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, Re
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string StomachDetails, 
-                    string D2, 
                     string Name, 
                     string Age, 
+                    string Gender, 
                     string FileNo, 
                     System.DateTime Date, 
                     string Premedication, 
                     string Scope, 
                     string ReferredDoctor, 
                     string ClinicalData, 
-                    string Conclusion, 
                     string GEJ, 
                     string Esophagus, 
+                    string StomachDetails, 
                     string D1, 
+                    string D2, 
+                    string Conclusion, 
                     string Assistant, 
                     string Endoscopist, 
-                    string Gender, 
                     int Original_Id, 
                     System.DateTime Original_Date, 
                     int Id) {
-            if ((StomachDetails == null)) {
+            if ((Name == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(StomachDetails));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Name));
             }
-            if ((D2 == null)) {
+            if ((Age == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(D2));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Age));
             }
-            if ((Name == null)) {
+            if ((Gender == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Name));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Gender));
             }
-            if ((Age == null)) {
+            if ((FileNo == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Age));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(FileNo));
             }
-            if ((FileNo == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Date));
+            if ((Premedication == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(FileNo));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Premedication));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(Date));
-            if ((Premedication == null)) {
+            if ((Scope == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Premedication));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Scope));
             }
-            if ((Scope == null)) {
+            if ((ReferredDoctor == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Scope));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(ReferredDoctor));
             }
-            if ((ReferredDoctor == null)) {
+            if ((ClinicalData == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(ReferredDoctor));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(ClinicalData));
             }
-            if ((ClinicalData == null)) {
+            if ((GEJ == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(ClinicalData));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(GEJ));
             }
-            if ((Conclusion == null)) {
+            if ((Esophagus == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Conclusion));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Esophagus));
             }
-            if ((GEJ == null)) {
+            if ((StomachDetails == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(GEJ));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(StomachDetails));
             }
-            if ((Esophagus == null)) {
+            if ((D1 == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Esophagus));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(D1));
             }
-            if ((D1 == null)) {
+            if ((D2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(D1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(D2));
             }
-            if ((Assistant == null)) {
+            if ((Conclusion == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Assistant));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Conclusion));
             }
-            if ((Endoscopist == null)) {
+            if ((Assistant == null)) {
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Endoscopist));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Assistant));
             }
-            if ((Gender == null)) {
+            if ((Endoscopist == null)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Gender));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Endoscopist));
             }
             this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_Id));
             this.Adapter.UpdateCommand.Parameters[18].Value = ((System.DateTime)(Original_Date));
@@ -1901,26 +1901,26 @@ SELECT Id, StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, Re
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string StomachDetails, 
-                    string D2, 
                     string Name, 
                     string Age, 
+                    string Gender, 
                     string FileNo, 
                     System.DateTime Date, 
                     string Premedication, 
                     string Scope, 
                     string ReferredDoctor, 
                     string ClinicalData, 
-                    string Conclusion, 
                     string GEJ, 
                     string Esophagus, 
+                    string StomachDetails, 
                     string D1, 
+                    string D2, 
+                    string Conclusion, 
                     string Assistant, 
                     string Endoscopist, 
-                    string Gender, 
                     int Original_Id, 
                     System.DateTime Original_Date) {
-            return this.Update(StomachDetails, D2, Name, Age, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, Conclusion, GEJ, Esophagus, D1, Assistant, Endoscopist, Gender, Original_Id, Original_Date, Original_Id);
+            return this.Update(Name, Age, Gender, FileNo, Date, Premedication, Scope, ReferredDoctor, ClinicalData, GEJ, Esophagus, StomachDetails, D1, D2, Conclusion, Assistant, Endoscopist, Original_Id, Original_Date, Original_Id);
         }
     }
     

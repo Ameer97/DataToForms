@@ -208,21 +208,9 @@
     <Compile Include="Forms\StomacheForm.Designer.cs">
       <DependentUpon>StomacheForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003181939392_initial.cs" />
-    <Compile Include="Migrations\202003181939392_initial.designer.cs">
-      <DependentUpon>202003181939392_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003241129197_ManyChangesAtAll.cs" />
-    <Compile Include="Migrations\202003241129197_ManyChangesAtAll.designer.cs">
-      <DependentUpon>202003241129197_ManyChangesAtAll.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003261325384_addEndscopist.cs" />
-    <Compile Include="Migrations\202003261325384_addEndscopist.designer.cs">
-      <DependentUpon>202003261325384_addEndscopist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003261342032_addGender.cs" />
-    <Compile Include="Migrations\202003261342032_addGender.designer.cs">
-      <DependentUpon>202003261342032_addGender.cs</DependentUpon>
+    <Compile Include="Migrations\202003261450526_initial.cs" />
+    <Compile Include="Migrations\202003261450526_initial.designer.cs">
+      <DependentUpon>202003261450526_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Colon.cs" />
@@ -267,17 +255,8 @@
     <EmbeddedResource Include="Forms\StomacheForm.resx">
       <DependentUpon>StomacheForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003181939392_initial.resx">
-      <DependentUpon>202003181939392_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003241129197_ManyChangesAtAll.resx">
-      <DependentUpon>202003241129197_ManyChangesAtAll.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003261325384_addEndscopist.resx">
-      <DependentUpon>202003261325384_addEndscopist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003261342032_addGender.resx">
-      <DependentUpon>202003261342032_addGender.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003261450526_initial.resx">
+      <DependentUpon>202003261450526_initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

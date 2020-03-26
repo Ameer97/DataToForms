@@ -32,6 +32,8 @@ namespace IssaForms
         {
             // TODO: This line of code loads data into the 'colonDataSet1.Colons' table. You can move, or remove it, as needed.
             this.colonsTableAdapter1.Fill(this.colonDataSet1.Colons);
+            // TODO: This line of code loads data into the 'colonDataSet1.Colons' table. You can move, or remove it, as needed.
+            this.colonsTableAdapter1.Fill(this.colonDataSet1.Colons);
         }
         private void dataGridView2_DoubleClick(object sender, EventArgs e)
         {
