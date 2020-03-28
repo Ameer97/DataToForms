@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IssaForms.Reports;
 
 namespace IssaForms
 {
@@ -39,7 +40,7 @@ namespace IssaForms
         {
             var Row = dataGridView2.SelectedCells[0].RowIndex;
             var Id = dataGridView2.Rows[Row].Cells[0].Value;
-            CrystalReport1 cr = new CrystalReport1();
+            CrystalReport3 cr = new CrystalReport3();
             cr.SetParameterValue("@Id", Id);
             var ForCr = new ReportViewerForm();
             ForCr.crystalReportViewer1.ReportSource = cr;

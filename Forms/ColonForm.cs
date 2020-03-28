@@ -5,6 +5,7 @@ using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using IssaForms.Reports;
 
 namespace IssaForms
 {
