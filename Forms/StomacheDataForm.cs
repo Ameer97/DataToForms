@@ -36,7 +36,7 @@ namespace IssaForms
         {
             var Row = dataGridView1.SelectedCells[0].RowIndex;
             var Id = dataGridView1.Rows[Row].Cells[0].Value;
-            CrystalReport2 cr = new CrystalReport2();
+            CrystalReport4 cr = new CrystalReport4();
             cr.SetParameterValue("@Id", Id);
             var ForCr = new ReportViewerForm();
             ForCr.crystalReportViewer1.ReportSource = cr;
