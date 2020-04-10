@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IssaForms.Reports;
+using System;
+using System.Diagnostics;
 using System.Windows.Forms;
-using IssaForms.Reports;
 
 namespace IssaForms
 {
@@ -43,9 +37,13 @@ namespace IssaForms
             CrystalReport3 cr = new CrystalReport3();
             cr.SetParameterValue("@Id", Id);
             var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
+            //ForCr.crystalReportViewer1.ReportSource = cr;
+            //ForCr.crystalReportViewer1.Refresh();
+            var path = @"colon\" + Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path);
+            Process.Start(path);
+
+            //ForCr.Show();
         }
     }
 }
