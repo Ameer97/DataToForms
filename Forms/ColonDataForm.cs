@@ -35,8 +35,9 @@ namespace IssaForms
             var Row = dataGridView2.SelectedCells[0].RowIndex;
             var Id = dataGridView2.Rows[Row].Cells[0].Value;
             ReportDocument cr = new ReportDocument();
+            cr.Load(@"C:\Users\Ameer\Desktop\github\DataToForms\CrystalReport1.rpt");
             cr.SetParameterValue("@Id", Id);
-            var path = @"colon\" + Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\colon\\" + Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
             cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path);
             Process.Start(path);
 
