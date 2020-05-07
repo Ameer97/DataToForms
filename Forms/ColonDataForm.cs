@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace IssaForms
@@ -18,18 +13,20 @@ namespace IssaForms
         }
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            var Row = dataGridView1.SelectedCells[0].RowIndex;
-            var Id = dataGridView1.Rows[Row].Cells[0].Value;
-            CrystalReport1 cr = new CrystalReport1();
-            cr.SetParameterValue("@Id", Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
+            //var Row = dataGridView1.SelectedCells[0].RowIndex;
+            //var Id = dataGridView1.Rows[Row].Cells[0].Value;
+            //CrystalReport1 cr = new CrystalReport1();
+            //cr.SetParameterValue("@Id", Id);
+            //var ForCr = new ReportViewerForm();
+            //ForCr.crystalReportViewer1.ReportSource = cr;
+            //ForCr.crystalReportViewer1.Refresh();
+            //ForCr.Show();
         }
 
         private void ColonDataForm_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'colonDataSet1.Colons' table. You can move, or remove it, as needed.
+            this.colonsTableAdapter1.Fill(this.colonDataSet1.Colons);
             // TODO: This line of code loads data into the 'colonDataSet1.Colons' table. You can move, or remove it, as needed.
             this.colonsTableAdapter1.Fill(this.colonDataSet1.Colons);
         }
@@ -37,12 +34,13 @@ namespace IssaForms
         {
             var Row = dataGridView2.SelectedCells[0].RowIndex;
             var Id = dataGridView2.Rows[Row].Cells[0].Value;
-            CrystalReport1 cr = new CrystalReport1();
+            ReportDocument cr = new ReportDocument();
             cr.SetParameterValue("@Id", Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
+            var path = @"colon\" + Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path);
+            Process.Start(path);
+
+            //ForCr.Show();
         }
     }
 }
