@@ -1,5 +1,7 @@
 ﻿using IssaForms.Reports;
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace IssaForms
@@ -31,10 +33,15 @@ namespace IssaForms
             var Id = dataGridView1.Rows[Row].Cells[0].Value;
             CrystalReport4 cr = new CrystalReport4();
             cr.SetParameterValue("@Id", Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
+
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\stomache\";
+            var fileName = Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + fileName);
+            Process.Start(path);
         }
     }
 }

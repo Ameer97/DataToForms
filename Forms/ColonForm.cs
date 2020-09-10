@@ -5,6 +5,8 @@ using IssaForms.Reports;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace IssaForms
@@ -66,35 +68,17 @@ namespace IssaForms
             _context.Colons.Add(Colon);
             _context.SaveChanges();
 
-            //ReportDocument cryRpt = new ReportDocument();
-            //cryRpt.Load("CrystalReport1.rpt");
-
-            //ParameterFieldDefinitions crParameterFieldDefinitions;
-            //ParameterFieldDefinition crParameterFieldDefinition;
-            //ParameterValues crParameterValues = new ParameterValues();
-            //ParameterDiscreteValue crParameterDiscreteValue = new ParameterDiscreteValue();
-
-            //crParameterDiscreteValue.Value = Colon.Id;
-            //crParameterFieldDefinitions = cryRpt.DataDefinition.ParameterFields;
-            //crParameterFieldDefinition = crParameterFieldDefinitions["Id"];
-            //crParameterValues = crParameterFieldDefinition.CurrentValues;
-
-            //crParameterValues.Clear();
-            //crParameterValues.Add(crParameterDiscreteValue);
-            //crParameterFieldDefinition.ApplyCurrentValues(crParameterValues);
-
             CrystalReport1 cr = new CrystalReport1();
             cr.SetParameterValue("@Id", Colon.Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
-            //ForCr.crystalReportViewer1.ReportSource = cryRpt;
-            //ForCr.crystalReportViewer1.Refresh();
-            //var cr = new CrystalReport1();
-            //cr.Load("CrystalReport1.rpt");
-            //var txt1 = cr.ReportDefinition.Sections["Section1"].ReportObjects["Text1"];
-            //txt1 = TName;
+
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\colon\";
+            var file = Colon.Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            var filename = path + file;
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + file);
+            Process.Start(filename);
         }
 
 
