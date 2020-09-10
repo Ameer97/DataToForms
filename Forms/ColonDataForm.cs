@@ -39,15 +39,6 @@ namespace IssaForms
             cr.SetParameterValue("@Id", Id);
 
             CommonFucntions.Preview(Id, cr);
-
-            //var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\colon\";
-            //var fileName = Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
-
-            //if (!Directory.Exists(path))
-            //    Directory.CreateDirectory(path);
-
-            //cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + fileName);
-            //Process.Start(path);
         }
     }
 }

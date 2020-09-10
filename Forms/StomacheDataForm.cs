@@ -34,14 +34,7 @@ namespace IssaForms
             CrystalReport4 cr = new CrystalReport4();
             cr.SetParameterValue("@Id", Id);
 
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\stomache\";
-            var fileName = Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
-            
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + fileName);
-            Process.Start(path);
+            CommonFucntions.Preview(Id, cr, colon: false);
         }
     }
 }

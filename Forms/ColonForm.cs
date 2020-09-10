@@ -71,14 +71,7 @@ namespace IssaForms
             CrystalReport1 cr = new CrystalReport1();
             cr.SetParameterValue("@Id", Colon.Id);
 
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\colon\";
-            var file = Colon.Id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
-            var filename = path + file;
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
-
-            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + file);
-            Process.Start(filename);
+            CommonFucntions.Preview(Colon.Id, cr);
         }
 
 

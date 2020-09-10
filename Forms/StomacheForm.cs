@@ -57,10 +57,7 @@ namespace IssaForms.Forms
 
             CrystalReport2 cr = new CrystalReport2();
             cr.SetParameterValue("@Id", Stomach.Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
+            CommonFucntions.Preview(Stomach.Id, cr, colon: false);
         }
 
         private void SpeedStomache_Click(object sender, EventArgs e)
