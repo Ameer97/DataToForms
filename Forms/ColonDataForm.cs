@@ -12,17 +12,6 @@ namespace IssaForms
         {
             InitializeComponent();
         }
-        private void dataGridView1_DoubleClick(object sender, EventArgs e)
-        {
-            var Row = dataGridView1.SelectedCells[0].RowIndex;
-            var Id = dataGridView1.Rows[Row].Cells[0].Value;
-            CrystalReport1 cr = new CrystalReport1();
-            cr.SetParameterValue("@Id", Id);
-            var ForCr = new ReportViewerForm();
-            ForCr.crystalReportViewer1.ReportSource = cr;
-            ForCr.crystalReportViewer1.Refresh();
-            ForCr.Show();
-        }
 
         private void ColonDataForm_Load_1(object sender, EventArgs e)
         {
@@ -35,7 +24,7 @@ namespace IssaForms
         {
             var Row = dataGridView2.SelectedCells[0].RowIndex;
             var Id = dataGridView2.Rows[Row].Cells[0].Value;
-            CrystalReport3 cr = new CrystalReport3();
+            ColonReport cr = new ColonReport();
             cr.SetParameterValue("@Id", Id);
 
             CommonFucntions.Preview(Id, cr);

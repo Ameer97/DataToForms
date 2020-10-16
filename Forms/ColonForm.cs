@@ -68,7 +68,7 @@ namespace IssaForms
             _context.Colons.Add(Colon);
             _context.SaveChanges();
 
-            CrystalReport1 cr = new CrystalReport1();
+            ColonReport cr = new ColonReport();
             cr.SetParameterValue("@Id", Colon.Id);
 
             CommonFucntions.Preview(Colon.Id, cr);
