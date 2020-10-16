@@ -23,7 +23,7 @@ namespace IssaForms.Reports {
         
         public override string ResourceName {
             get {
-                return "CrystalReport3.rpt";
+                return "ColonReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace IssaForms.Reports {
         
         public override string FullResourceName {
             get {
-                return "IssaForms.Reports.CrystalReport3.rpt";
+                return "IssaForms.Reports.ColonReport.rpt";
             }
             set {
                 // Do nothing
@@ -98,9 +98,9 @@ namespace IssaForms.Reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport3 : Component, ICachedReport {
+    public class CachedColonReport : Component, ICachedReport {
         
-        public CachedCrystalReport3() {
+        public CachedColonReport() {
         }
         
         [Browsable(false)]

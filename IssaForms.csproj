@@ -165,6 +165,12 @@
     <Compile Include="Forms\ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\ColonReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColonReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\CrystalReport4.cs">
       <DependentUpon>CrystalReport4.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -230,12 +236,6 @@
     <Compile Include="Forms\StomacheDataForm.Designer.cs">
       <DependentUpon>StomacheDataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ColonReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport3.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CommonFucntions.cs" />
     <Compile Include="StomachDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -280,9 +280,9 @@
     <EmbeddedResource Include="Forms\StomacheDataForm.resx">
       <DependentUpon>StomacheDataForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\CrystalReport3.rpt">
+    <EmbeddedResource Include="Reports\ColonReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+      <LastGenOutput>ColonReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ColonDataSet.xsc">
       <DependentUpon>ColonDataSet.xsd</DependentUpon>
