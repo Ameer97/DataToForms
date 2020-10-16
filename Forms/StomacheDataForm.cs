@@ -31,7 +31,7 @@ namespace IssaForms
         {
             var Row = dataGridView1.SelectedCells[0].RowIndex;
             var Id = dataGridView1.Rows[Row].Cells[0].Value;
-            CrystalReport4 cr = new CrystalReport4();
+            StomacheReport cr = new StomacheReport();
             cr.SetParameterValue("@Id", Id);
 
             CommonFucntions.Preview(Id, cr, colon: false);

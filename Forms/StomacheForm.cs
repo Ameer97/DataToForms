@@ -55,7 +55,7 @@ namespace IssaForms.Forms
             _context.Stomaches.Add(Stomach);
             _context.SaveChanges();
 
-            CrystalReport2 cr = new CrystalReport2();
+            StomacheReport cr = new StomacheReport();
             cr.SetParameterValue("@Id", Stomach.Id);
             CommonFucntions.Preview(Stomach.Id, cr, colon: false);
         }
