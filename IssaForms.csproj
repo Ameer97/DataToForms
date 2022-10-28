@@ -159,6 +159,12 @@
       <DependentUpon>ColonDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Enum\Gender.cs" />
+    <Compile Include="Forms\KeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyForm.Designer.cs">
+      <DependentUpon>KeyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +242,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StomachDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\KeyForm.resx">
+      <DependentUpon>KeyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -15,12 +15,13 @@ namespace IssaForms
         {
             var directory = colon ? "colon" : "stomache";
             var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + directory + "\\";
-            var file = id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".doc";
+            var file = id + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute + "-" + DateTime.Now.Second + ".pdf";
             var filename = path + file;
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
 
-            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path + file);
+            var ggg = path + file;
+            cr.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, ggg);
             Process.Start(filename);
         }
     }

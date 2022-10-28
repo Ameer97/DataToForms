@@ -1,5 +1,6 @@
 ﻿using IssaForms.Db;
 using IssaForms.Enum;
+using IssaForms.Forms;
 using IssaForms.Models;
 using IssaForms.Reports;
 using Microsoft.VisualBasic;
@@ -18,6 +19,7 @@ namespace IssaForms
         public ColonForm()
         {
             InitializeComponent();
+            TName.Focus();
             var PreparationList = new List<string>()
             {
                 Preparation.Good,
@@ -40,6 +42,13 @@ namespace IssaForms
             };
             CGender.DataSource = GenderList;
         }
+
+
+        //private void ColonForm_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.A)
+        //        e.SuppressKeyPress = true;
+        //}
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -92,8 +101,8 @@ namespace IssaForms
             TRectum.Text = Interaction.InputBox("Input Rectum");
 
             TConclusion.Text = Interaction.InputBox("Input Conclusion");
-            TAssistant.Text = Interaction.InputBox("Input Assistant");
             TEndoscopist.Text = Interaction.InputBox("Input Endoscopist");
+            TAssistant.Text = Interaction.InputBox("Input Assistant");
         }
         void SpeedAll()
         {
@@ -103,6 +112,22 @@ namespace IssaForms
             TPremedication.Text = Interaction.InputBox("Input Premedication");
             TReferredDoctor.Text = Interaction.InputBox("Input Referred Doctor");
             TClinicalData.Text = Interaction.InputBox("Input Clinical Data");
+        }
+
+        private void ColonForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                try
+                {
+                    KeyForm keyForm = new KeyForm((TextBox)ActiveControl);
+                    keyForm.Show();
+                }
+                catch { }
+                ////var gg = TName;
+                //var g = (TextBox)ActiveControl;
+                //g.Paste();
+            }
         }
     }
 }
