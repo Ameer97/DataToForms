@@ -429,8 +429,10 @@
             this.Controls.Add(this.LAssitant);
             this.Controls.Add(this.LConclusion);
             this.Controls.Add(this.TConclusion);
+            this.KeyPreview = true;
             this.Name = "StomacheForm";
             this.Text = "StomacheForm";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StomacheForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

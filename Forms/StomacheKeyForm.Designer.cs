@@ -1,7 +1,6 @@
-﻿
-namespace IssaForms.Forms
+﻿namespace IssaForms.Forms
 {
-    partial class KeyForm
+    partial class StomacheKeyForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,17 +42,17 @@ namespace IssaForms.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(552, 502);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // KeyForm
+            // StomacheKeyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 526);
+            this.ClientSize = new System.Drawing.Size(574, 525);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "KeyForm";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.KeyForm_Load);
+            this.Name = "StomacheKeyForm";
+            this.Text = "StomacheKeyForm";
+            this.Load += new System.EventHandler(this.StomacheKeyForm_Load);
             this.ResumeLayout(false);
 
         }

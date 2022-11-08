@@ -120,7 +120,7 @@ namespace IssaForms
             {
                 try
                 {
-                    KeyForm keyForm = new KeyForm((TextBox)ActiveControl);
+                    ColonKeyForm keyForm = new ColonKeyForm((TextBox)ActiveControl);
                     keyForm.Show();
                 }
                 catch { }

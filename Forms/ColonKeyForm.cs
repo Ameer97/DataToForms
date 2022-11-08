@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace IssaForms.Forms
 {
-    public partial class KeyForm : Form
+    public partial class ColonKeyForm : Form
     {
         private TextBox _selectedTextBox;
 
@@ -35,31 +35,11 @@ namespace IssaForms.Forms
             "multiple biopsies taken.",
         };
 
-        public KeyForm(TextBox colonForm)
+        public ColonKeyForm(TextBox colonForm)
         {
             _selectedTextBox = colonForm;
             InitializeComponent();
         }
-
-        //private void CloseForm(object sender, EventArgs e)
-        //{
-            
-        //}
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    data = "Hi a";
-        //}
-
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-
-
-
-
 
         void b_Click(object sender, EventArgs e)
         {
@@ -70,24 +50,17 @@ namespace IssaForms.Forms
                 _selectedTextBox.Select(_selectedTextBox.Text.Length, 0);
                 Close();
             }
-            //MessageBox.Show(string.Format("{0} Clicked", b.Text));
         }
 
         private void KeyForm_Load(object sender, EventArgs e)
         {
             var rowCount = ColonsShoutCuts.Count;
-            //var columnCount = 4;
 
-            //this.tableLayoutPanel1.ColumnCount = columnCount;
             this.tableLayoutPanel1.RowCount = rowCount;
-
+            this.tableLayoutPanel1.ColumnCount = 0;
             this.tableLayoutPanel1.ColumnStyles.Clear();
             this.tableLayoutPanel1.RowStyles.Clear();
 
-            //for (int i = 0; i < columnCount; i++)
-            //{
-            //    this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100 / columnCount));
-            //}
             for (int i = 0; i < rowCount; i++)
             {
                 this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100 / rowCount));
@@ -104,10 +77,6 @@ namespace IssaForms.Forms
             }
 
 
-            //foreach (var item in Controls.OfType<Button>())
-            //{
-            //    item.Click += CloseForm;
-            //}
         }
     }
 }

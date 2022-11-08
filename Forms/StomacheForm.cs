@@ -91,5 +91,21 @@ namespace IssaForms.Forms
 
 
         }
+
+        private void StomacheForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F4)
+            {
+                try
+                {
+                    StomacheKeyForm keyForm = new StomacheKeyForm((TextBox)ActiveControl);
+                    keyForm.Show();
+                }
+                catch { }
+                ////var gg = TName;
+                //var g = (TextBox)ActiveControl;
+                //g.Paste();
+            }
+        }
     }
 }
