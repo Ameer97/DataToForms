@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace IssaForms
@@ -99,19 +100,18 @@ namespace IssaForms
             TIleum.Text = Interaction.InputBox("Input Ileum");
             TColon.Text = Interaction.InputBox("Input Colon");
             TRectum.Text = Interaction.InputBox("Input Rectum");
-
             TConclusion.Text = Interaction.InputBox("Input Conclusion");
             TEndoscopist.Text = Interaction.InputBox("Input Endoscopist");
             TAssistant.Text = Interaction.InputBox("Input Assistant");
-        }
-        void SpeedAll()
-        {
             TName.Text = Interaction.InputBox("Input Name");
             TAge.Text = Interaction.InputBox("Input Age");
             TFileNo.Text = Interaction.InputBox("Input File No");
             TPremedication.Text = Interaction.InputBox("Input Premedication");
             TReferredDoctor.Text = Interaction.InputBox("Input Referred Doctor");
             TClinicalData.Text = Interaction.InputBox("Input Clinical Data");
+        }
+        void SpeedAll()
+        {
         }
 
         private void ColonForm_KeyDown(object sender, KeyEventArgs e)
@@ -128,6 +128,11 @@ namespace IssaForms
                 //var g = (TextBox)ActiveControl;
                 //g.Paste();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CommonFucntions.SaveExcel(_context.Colons.AsEnumerable().Select(c => new ColonDto(c)).ToList());
         }
     }
 }

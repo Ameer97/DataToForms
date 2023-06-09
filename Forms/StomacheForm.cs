@@ -5,6 +5,7 @@ using IssaForms.Reports;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace IssaForms.Forms
@@ -106,6 +107,11 @@ namespace IssaForms.Forms
                 //var g = (TextBox)ActiveControl;
                 //g.Paste();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CommonFucntions.SaveExcel(_context.Stomaches.AsEnumerable().Select(s => new StomachDto(s)).ToList());
         }
     }
 }
